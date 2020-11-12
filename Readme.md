@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Egor Platonov](https://up.htmlacademy.ru/adaptive/21/user/1487723).
-* Наставник: `Неизвестно`.
+* Наставник: Никита Сигов.
 
 ---
 
