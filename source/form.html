@@ -37,24 +37,26 @@
                 </header>
             </div>
         </section>
-        <section class="form__draw">
+        <div class="draw">
+        <section class="draw__form">
             <div class="draw__wrapper">
-                <ul class="form__draw-list">
-                    <li class="form__draw-item">    
+                <ul class="draw__form-list">
+                    <li class="draw__form-item">    
                         <label for="name"><b>ФАМИЛИЯ:</b></label>
                         <input type="text" placeholder="Укажите фамилию *" name="name" required>
                     </li>
-                    <li class="form__draw-item">
+                    <li class="draw__form-item">
                         <label for="name"><b>ИМЯ:</b></label>
                         <input type="text" placeholder="Введите ваше имя *" name="name" required>
                     </li>
-                    <li class="form__draw-item">
+                    <li class="draw__form-item">
                         <label for="name"><b>ОТЧЕСТВО:</b></label>
                         <input type="text" placeholder="Ну и отчество тоже" name="name" required>
                     </li>
                 </ul> 
             </div>
         </section>
+        </div>
         <section class="form__achievements">
             <div class="achievements__wrapper">
                 <h3>Ваши безбашенные<br> достижения в путешествии</h3>
@@ -63,10 +65,10 @@
                         <input type="checkbox" name="shark" value="Сделал селфи с акулой" checked>Сделал селфи с акулой</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="bitch" value="Обгорел на пляже" checked>Обгорел на пляже</p>
+                        <input type="checkbox" name="biatch" value="Обгорел на пляже" checked>Обгорел на пляже</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="Noris" value="Видел Чака Норриса">Видел Чака Норриса</p>
+                        <input type="checkbox" name="noris" value="Видел Чака Норриса">Видел Чака Норриса</p>
                     </li>
                     <li class="achievements__item">
                         <input type="checkbox" name="souvenirs" value="Накупил сувениров">Накупил сувениров</p>
@@ -85,6 +87,7 @@
             </div>
         </section>
 
+        <div class="app">
         <section class="form__app">
             <div class="app__wrapper">
                 <h3>С каким приложением путешествовали?</h3>
@@ -106,19 +109,22 @@
                         </li>
                 </ul>
             </div>
-    </section>
-
-    <section class="send__form">
-        <div class="send-form__wrapper">
-            <h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
-                <div class="form__item">
-                    <label for="message"></label>
-                    <input type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
-              </div>
-              <button type="button">Отправить форму</button>
-              <p class="form__necessarily">* — обязательные поля</p>
+        </section>
         </div>
-    </section>
+
+        <div class="send">
+        <section class="send__form">
+            <div class="send-form__wrapper">
+                <h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+                    <div class="form__item">
+                        <label for="message"></label>
+                        <input type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
+                    </div>
+                    <button type="button">Отправить форму</button>
+                    <p class="form__necessarily">* — обязательные поля</p>
+            </div>
+        </section>
+        </div>
     </main>
 
     <footer class="page-footer">
