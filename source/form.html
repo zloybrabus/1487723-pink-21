@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пинк</title>
+</head>
+<body class="page__body">
+    <header class="page-header">
+        <a class="page-header__logo"><picture class="page-header__logo-image"  src="https://via.placeholder.com/74x23" alt="Приложение Пинк"></a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper"></div>
+                <ul class="main-nav__list">
+                    <li class="site-list__item"><a href="#">ГЛАВНАЯ</a></li>
+                    <li class="site-list__item"><a href="#">ФОТОГРАФИИ</a></li>
+                    <li class="site-list__item"><a href="#">КОНКУРС</a></li>
+                    <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="page-form">
+
+        <h1 class="visually-hidden">Заполните форму регистрации</h1>
+
+        <section class="intro">
+            <div class="intro__wrapper">
+                <header class="intro__header">
+                    <h2 class="visually-hidden">
+                      Интро приложения
+                    </h2>
+                    <p class="intro__slogan">
+                      Конкурс на самое<br>
+                      безбашенное<br>
+                      путешествие с Пинк!
+                    </p>
+                </header>
+            </div>
+        </section>
+        <div class="draw">
+        <section class="draw__form">
+            <div class="draw__wrapper">
+                <ul class="draw__form-list">
+                    <li class="draw__form-item">
+                        <label for="name"><b>ФАМИЛИЯ:</b></label>
+                        <input type="text" placeholder="Укажите фамилию *" name="name" required>
+                    </li>
+                    <li class="draw__form-item">
+                        <label for="name"><b>ИМЯ:</b></label>
+                        <input type="text" placeholder="Введите ваше имя *" name="name" required>
+                    </li>
+                    <li class="draw__form-item">
+                        <label for="name"><b>ОТЧЕСТВО:</b></label>
+                        <input type="text" placeholder="Ну и отчество тоже" name="name" required>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </div>
+        <section class="form__achievements">
+            <div class="achievements__wrapper">
+                <h3>Ваши безбашенные<br> достижения в путешествии</h3>
+                <ul class="achievements__list">
+                    <li class="achievements__item">
+                        <input type="checkbox" name="shark" value="Сделал селфи с акулой" checked>Сделал селфи с акулой</p>
+                    </li>
+                    <li class="achievements__item">
+                        <input type="checkbox" name="biatch" value="Обгорел на пляже" checked>Обгорел на пляже</p>
+                    </li>
+                    <li class="achievements__item">
+                        <input type="checkbox" name="noris" value="Видел Чака Норриса">Видел Чака Норриса</p>
+                    </li>
+                    <li class="achievements__item">
+                        <input type="checkbox" name="souvenirs" value="Накупил сувениров">Накупил сувениров</p>
+                    </li>
+                    <li class="achievements__item">
+                        <input type="checkbox" name="tower" value="Удержал башню" checked>Удержал башню</p>
+                    </li>
+                    <li class="achievements__item">
+                        <input type="checkbox" name="hotel" value="Разгромил отель">Разгромил отель</p>
+                    </li>
+                </ul>
+                <label for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
+                <input type="tel" placeholder="Номер, пожалуйста" name="phone" required>
+                <label for="mail"><b>АДРЕС ПОЧТЫ</b></label>
+                <input type="email" placeholder="Введите почту *" name="mail" required>
+            </div>
+        </section>
+
+        <div class="app">
+        <section class="form__app">
+            <div class="app__wrapper">
+                <h3>С каким приложением путешествовали?</h3>
+                    <ul class="app__list">
+                        <li class="app__item">
+                            <input type="radio" id="pink-ios"
+                            name="text" value="Pink для iOS" checked>
+                            <label for="pink-ios">Pink для iOS</label>
+                        </li>
+                        <li class="app__item">
+                            <input type="radio" id="pink-android"
+                            name="text" value="Pink на Android">
+                            <label for="pink-android">Pink на Android</label>
+                        </li>
+                        <li class="app__item">
+                            <input type="radio" id="Windows"
+                            name="text" value="Windows Phone">
+                            <label for="Windows">Windows Phone</label>
+                        </li>
+                </ul>
+            </div>
+        </section>
+        </div>
+
+        <div class="send">
+        <section class="send__form">
+            <div class="send-form__wrapper">
+                <h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+                    <div class="form__item">
+                        <label for="message"></label>
+                        <input type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
+                    </div>
+                    <button type="button">Отправить форму</button>
+                    <p class="form__necessarily">* — обязательные поля</p>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <a class="page-footer__logo"><picture class="page-footer__logo-image"  src="https://via.placeholder.com/145x40" alt="Приложение Пинк"></a>
+            <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твтиттер</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютюбе</a>
+                </li>
+            </ul>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано</b>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><picture class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип академии"></a>
+              </div>
+        </div>
+      </footer>
+
+</body>
+</html>
