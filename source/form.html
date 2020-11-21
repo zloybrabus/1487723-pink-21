@@ -41,72 +41,75 @@
         <div class="draw">
         <section class="draw__form">
             <div class="draw__wrapper">
+                <p class="draw__copyright">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
                 <ul class="draw__form-list">
                     <li class="draw__form-item">
-                        <label for="name"><b>ФАМИЛИЯ:</b></label>
-                        <input type="text" placeholder="Укажите фамилию *" name="name" required>
+                        <label class="draw__form-name" for="name"><b>ФАМИЛИЯ:</b></label>
+                        <input class="draw__form-input" type="text" placeholder="Укажите фамилию *" name="name" required>
                     </li>
                     <li class="draw__form-item">
-                        <label for="name"><b>ИМЯ:</b></label>
-                        <input type="text" placeholder="Введите ваше имя *" name="name" required>
+                        <label class="draw__form-name" for="name"><b>ИМЯ:</b></label>
+                        <input class="draw__form-input" type="text" placeholder="Введите ваше имя *" name="name" required>
                     </li>
                     <li class="draw__form-item">
-                        <label for="name"><b>ОТЧЕСТВО:</b></label>
-                        <input type="text" placeholder="Ну и отчество тоже" name="name" required>
+                        <label class="draw__form-name" for="name"><b>ОТЧЕСТВО:</b></label>
+                        <input class="draw__form-input" type="text" placeholder="Ну и отчество тоже" name="name" required>
                     </li>
                 </ul>
             </div>
         </section>
         </div>
+        <div class="achievements">
         <section class="form__achievements">
             <div class="achievements__wrapper">
-                <h3>Ваши безбашенные<br> достижения в путешествии</h3>
+                <h3 class="achievements__title">Ваши безбашенные<br> достижения в путешествии</h3>
                 <ul class="achievements__list">
                     <li class="achievements__item">
-                        <input type="checkbox" name="shark" value="Сделал селфи с акулой" checked>Сделал селфи с акулой</p>
+                        <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked><p class="">Сделал селфи с акулой</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="biatch" value="Обгорел на пляже" checked>Обгорел на пляже</p>
+                        <input class="achievements__input" type="checkbox" name="biatch" value="Обгорел на пляже" checked><p class="achievements__text">Обгорел на пляже</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="noris" value="Видел Чака Норриса">Видел Чака Норриса</p>
+                        <input class="achievements__input" type="checkbox" name="noris" value="Видел Чака Норриса"><p class="achievements__text">Видел Чака Норриса</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="souvenirs" value="Накупил сувениров">Накупил сувениров</p>
+                        <input class="achievements__input" type="checkbox" name="souvenirs" value="Накупил сувениров"><p class="achievements__text">Накупил сувениров</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="tower" value="Удержал башню" checked>Удержал башню</p>
+                        <input class="achievements__input" type="checkbox" name="tower" value="Удержал башню" checked><p class="achievements__text">Удержал башню</p>
                     </li>
                     <li class="achievements__item">
-                        <input type="checkbox" name="hotel" value="Разгромил отель">Разгромил отель</p>
+                        <input class="achievements__input" type="checkbox" name="hotel" value="Разгромил отель"><p class="achievements__text">Разгромил отель</p>
                     </li>
                 </ul>
-                <label for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
-                <input type="tel" placeholder="Номер, пожалуйста" name="phone" required>
-                <label for="mail"><b>АДРЕС ПОЧТЫ</b></label>
-                <input type="email" placeholder="Введите почту *" name="mail" required>
+                <label class="draw__form-name" for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
+                <input class="draw__form-input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
+                <label class="draw__form-name" for="mail"><b>АДРЕС ПОЧТЫ</b></label>
+                <input class="draw__form-input" type="email" placeholder="Введите почту *" name="mail" required>
             </div>
         </section>
+        </div>
 
         <div class="app">
         <section class="form__app">
             <div class="app__wrapper">
-                <h3>С каким приложением путешествовали?</h3>
+                <h3 class="achievements__title">С каким приложением путешествовали?</h3>
                     <ul class="app__list">
                         <li class="app__item">
                             <input type="radio" id="pink-ios"
                             name="text" value="Pink для iOS" checked>
-                            <label for="pink-ios">Pink для iOS</label>
+                            <label class="achievements__text" for="pink-ios">Pink для iOS</label>
                         </li>
                         <li class="app__item">
                             <input type="radio" id="pink-android"
                             name="text" value="Pink на Android">
-                            <label for="pink-android">Pink на Android</label>
+                            <label class="achievements__text" for="pink-android">Pink на Android</label>
                         </li>
                         <li class="app__item">
                             <input type="radio" id="Windows"
                             name="text" value="Windows Phone">
-                            <label for="Windows">Windows Phone</label>
+                            <label class="achievements__text" for="Windows">Windows Phone</label>
                         </li>
                 </ul>
             </div>
@@ -116,12 +119,12 @@
         <div class="send">
         <section class="send__form">
             <div class="send-form__wrapper">
-                <h3>ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+                <h3 class="achievements__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
                     <div class="form__item">
                         <label for="message"></label>
-                        <input type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
+                        <input class="send__input" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
                     </div>
-                    <button type="button">Отправить форму</button>
+                    <button class="send__button" type="button">Отправить форму</button>
                     <p class="form__necessarily">* — обязательные поля</p>
             </div>
         </section>
