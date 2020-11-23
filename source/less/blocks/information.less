@@ -5,6 +5,34 @@
     font-size: 24px;
     line-height: 120%;
     background: #FFFFFF;
+
+    @media (min-width: @tablet-width) {
+    .information__wrapper {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .information__slogan {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 54px;
+    }
+    }
+    @media (min-width: @desktop-width) {
+        .information__wrapper {
+            width: 1200px;
+            display: flex;
+        }
+        .information__slogan {
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 68px;
+        }
+        .information__list {
+            display: flex;
+            justify-content: space-between;
+        }
+        }
 }
 
 .information__list {

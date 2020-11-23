@@ -1,5 +1,37 @@
 .contacts {
     background: #FFFFFF;
+
+    @media (min-width: @tablet-width) {
+        .contacts__wrapper {
+          width: 1200px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .contacts__slogan {
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 54px;
+        }
+        .map {
+            width: 1200px;
+        }
+    }
+
+        @media (min-width: @desktop-width) {
+            .contacts__wrapper {
+              width: 1439px;
+              display: flex;
+              justify-content: space-between;
+            }
+            .contacts__slogan {
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 68px;
+            }
+            .map {
+                width: 1200px;
+            }
+        }
 }
 
 .contacts__slogan {
