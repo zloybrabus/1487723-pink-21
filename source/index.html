@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo"><picture class="page-header__logo-image"  src="https://via.placeholder.com/74x23" alt="Приложение Пинк"></a>
+        <a class="page-header__logo"><img class="page-header__logo-image" src="../source/img/pink.svg"   alt="Приложение Пинк"></a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
@@ -69,13 +71,22 @@
             </div>
         </section>
 
+        <section class="diagramm">
+          <div class="diagramm__wrapper">
+            <h2 class="visually-hidden">Пинк эффективный</h2>
+              <h3 class="diagramm__title">Эффект на 24 часа!</h3>
+              <p class="diagramm__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="diagramm__information" href="#">Узнать больше об исследовании</a>
+          </div>
+        </section>
+
         <section class="reviews">
             <div class="reviews__wrapper">
                 <h2 class="visually-hidden">Отзывы о нас</h2>
                     <div class="reviews__list">
                         <blockquote class="reviews__item slider__item">
                             <div class="reviews__author-info">
-                                <cite class="reviews__author-name">Николай Петров</cite>
+                                <p class="reviews__author-name">Николай Петров</p>
                                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                             </div>
                         </blockquote>
@@ -91,7 +102,7 @@
         </section>
 
         <section class="tariffs">
-            <div class="tariffs__wrapper slider">
+            <div class="tariffs__wrapper">
               <ul class="tariffs__list slider__list">
                 <li class="tariffs__item tariffs__item--fast slider__item">
                   <h3 class="tariffs__title">База</h3>
@@ -125,15 +136,15 @@
                   <ul class="contacts__list">
                     <li class="contacts__item">
                         <h3 class="contacts__title">Звоните:</h3>
-                        <p class="contacts__phone-mobile"><a href="+7 (812) 555-66-66">+7 (812) 555-66-66</a></p>
+                        <p class="contacts__email"><a class="contacts__email" href="+7 (812) 555-66-66">+7 (812) 555-66-66</a></p>
                     </li>
                     <li class="contacts__item">
                         <h3 class="contacts__title">Пишите:</h3>
-                        <p class="contacts__email"><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+                        <p class="contacts__email"><a class="contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
                     </li>
                     <li class="contacts__item">
                         <h3 class="contacts__title">Приезжайте в гости:</h3>
-                        <p class="contacts__email"><a href="#">ул. Большая Конюшенная, 19/8</a></p>
+                        <p class="contacts__email"><a class="contacts__email" href="#">ул. Большая Конюшенная, 19/8</a></p>
                     </li>
                   </ul>
               </div>
@@ -158,8 +169,8 @@
             </li>
         </ul>
         <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><picture class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип академии"></a>
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo" src="../source/img/htmlacademy.svg" alt="Логотип академии"></a>
           </div>
     </div>
   </footer>
