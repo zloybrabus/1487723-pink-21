@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <title>Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo"><picture class="page-header__logo-image"  src="https://via.placeholder.com/74x23" alt="Приложение Пинк"></a>
+        <a class="page-header__logo"><img class="page-header__logo-image" src="../source/img/pink.svg"   alt="Приложение Пинк"></a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper"></div>
+            <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
                     <li class="site-list__item"><a href="#">ГЛАВНАЯ</a></li>
                     <li class="site-list__item"><a href="#">ФОТОГРАФИИ</a></li>
                     <li class="site-list__item"><a href="#">КОНКУРС</a></li>
                     <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
                 </ul>
+              </div>
         </nav>
     </header>
     <main class="page-main">
@@ -68,13 +71,22 @@
             </div>
         </section>
 
+        <section class="diagramm">
+          <div class="diagramm__wrapper">
+            <h2 class="visually-hidden">Пинк эффективный</h2>
+              <h3 class="diagramm__title">Эффект на 24 часа!</h3>
+              <p class="diagramm__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="diagramm__information" href="#">Узнать больше об исследовании</a>
+          </div>
+        </section>
+
         <section class="reviews">
             <div class="reviews__wrapper">
                 <h2 class="visually-hidden">Отзывы о нас</h2>
                     <div class="reviews__list">
                         <blockquote class="reviews__item slider__item">
                             <div class="reviews__author-info">
-                                <cite class="reviews__author-name">Николай Петров</cite>
+                                <p class="reviews__author-name">Николай Петров</p>
                                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                             </div>
                         </blockquote>
@@ -90,33 +102,77 @@
         </section>
 
         <section class="tariffs">
-            <div class="tariffs__wrapper slider">
-              <ul class="tariffs__list slider__list">
-                <li class="tariffs__item tariffs__item--fast slider__item">
-                  <h3 class="tariffs__title">База</h3>
-                  <span class="tariffs__price">1,99 USD</span>
-                  <p class="tariffs__description"><span>Розовый фильтр</span><span>Смайлики</span><span>Комментарии</span></p>
-                </li>
-                <li class="tariffs__item tariffs__item--cool slider__item">
-                  <h3 class="tariffs__title">Стандарт</h3>
-                  <span class="tariffs__price">3,99 USD</span>
-                  <p class="tariffs__description"><span>Розовый фильтр</span><span>Смайлики</span><span>Комментарии</span></p>
-                </li>
-                <li class="tariffs__item tariffs__item--price slider__item">
-                  <h3 class="tariffs__title">Анлим</h3>
-                  <span class="tariffs__price">9,99 USD</span>
-                  <p class="tariffs__description"><span>Розовый фильтр</span><span>Смайлики</span><span>Комментарии</span></p>
-                </li>
-              </ul>
-              <div class="slider">
-              <p class="tariffs__toggles slider__toggles">
-                <button class="slider__toggle" type="button">1</button>
-                <button class="slider__toggle slider__toggle--current" type="button">2</button>
-                <button class="slider__toggle" type="button">3</button>
-              </p>
-              </div>
-            </div>
+          <div class="tariffs__wrapper">
+          <h2 class="visually-hidden">Тарифы</h2>
+            <table class="tariffs__table">
+              <tr class="tariffs__list">
+                <td class="tariffs__table-empty-cell"></td>
+                <td class="tariffs__item">
+                  <h3 class="tariffs__tariff-name">База</h3>
+                  <p class="tariffs__tariff-cost">1,99 USD</p>
+                </td>
+                <td class="tariffs__item tariffs_hit">
+                  <h3 class="tariffs__tariff-name">Стандарт</h3>
+                  <p class="tariffs__tariff-cost">3,99 USD</p>
+                </td>
+                <td class="tariffs__item">
+                  <h3 class="tariffs__tariff-name">Анлим</h3>
+                  <p class="tariffs__tariff-cost">9,99 USD</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariffs__service">Розовый фильтр</td>
+                <td class="tariffs__include tariffs__include--yes">
+                  <span class="visually-hidden">Включено</span>
+                </td>
+                <td class="tariffs__include tariffs__include--yes">
+                  <span class="visually-hidden">Включено</span>
+              </td>
+              <td class="tariffs__include tariffs__include--yes">
+                <span class="visually-hidden">Включено</span>
+              </td>
+              </tr>
+              <tr>
+                <td class="tariffs__service">Смайлики</td>
+                  <td class="tariffs__include tariffs__include--no">
+                    <span class="visually-hidden">Не включено</span>
+                  </td>
+                <td class="tariffs__include tariffs__include--yes">
+                  <span class="visually-hidden">Включено</span>
+                </td>
+                <td class="tariffs__include tariffs__include--yes">
+                  <span class="visually-hidden">Включено</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariffs__service">Комментарии</td>
+                <td class="tariffs__include tariffs__include--no">
+                  <span class="visually-hidden">Не включено</span>
+                </td>
+                <td class="tariffs__include tariffs__include--no">
+                  <span class="visually-hidden">Не включено</span>
+                </td>
+                <td class="tariffs__include tariffs__include--yes">
+                  <span class="visually-hidden">Включено</span>
+                </td>
+              </tr>
+            </table>
+          
+          <div class="slider">
+          <ul class="tariffs__controls">
+            <li>
+              <button class="tariffs__control" type="button" aria-label="Тариф 1"></button>
+            </li>
+            <li>
+              <button class="tariffs__control tariffs__control--current" type="button" aria-label="Тариф 2"></button>
+            </li>
+            <li>
+              <button class="tariffs__control" type="button" aria-label="Тариф 3"></button>
+            </li>
+          </ul>
+          </div>
           </section>
+         </div>
 
           <section class="contacts">
               <div class="contacts__wrapper">
@@ -124,15 +180,15 @@
                   <ul class="contacts__list">
                     <li class="contacts__item">
                         <h3 class="contacts__title">Звоните:</h3>
-                        <p class="contacts__phone-mobile"><a href="+7 (812) 555-66-66">+7 (812) 555-66-66</a></p>
+                        <p class="contacts__email"><a class="contacts__email" href="+7 (812) 555-66-66">+7 (812) 555-66-66</a></p>
                     </li>
                     <li class="contacts__item">
                         <h3 class="contacts__title">Пишите:</h3>
-                        <p class="contacts__email"><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+                        <p class="contacts__email"><a class="contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
                     </li>
                     <li class="contacts__item">
                         <h3 class="contacts__title">Приезжайте в гости:</h3>
-                        <p class="contacts__email"><a href="#">ул. Большая Конюшенная, 19/8</a></p>
+                        <p class="contacts__email"><a class="contacts__email" href="#">ул. Большая Конюшенная, 19/8</a></p>
                     </li>
                   </ul>
               </div>
@@ -142,26 +198,26 @@
               </div>
     </main>
 
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-            <a class="page-footer__logo"><picture class="page-footer__logo-image"  src="https://via.placeholder.com/145x40" alt="Приложение Пинк"></a>
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твтиттер</a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютюбе</a>
-                </li>
-            </ul>
-            <div class="page-footer__copyright copyright">
-                <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><picture class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип академии"></a>
-              </div>
-        </div>
-      </footer>
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <a class="page-footer__logo"><picture class="page-footer__logo-image"  src="https://via.placeholder.com/145x40" alt="Приложение Пинк"></a>
+        <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твтиттер</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютюбе</a>
+            </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo" src="../source/img/htmlacademy.svg" alt="Логотип академии"></a>
+          </div>
+    </div>
+  </footer>
 
 </body>
 </html>

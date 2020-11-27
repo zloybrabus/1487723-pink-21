@@ -1,17 +1,46 @@
+.intro {
+    background: #1D2631;
+    padding-top: 0;
+}
+
 .intro-header {
     background: url('/1487723-pink-21/source/img/back-mobile.png');
 }
 
-.intro-slogan {
+.intro__slogan {
     text-align: center;
     color: #FFFFFF;
     font-weight: 300;
     font-size: 24px;
     line-height: 120%;
+
+    @media (min-width: @tablet-width) {
+        .intro__wrapper {
+          width: 660px;
+          display: flex;
+          justify-content: left;
+          flex-direction: column;
+        }
+      }
+      @media (min-width: @desktop-width) {
+          .intro__wrapper{
+        width: 2560px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+      }
 }
 
 .button-main {
+    display: flex;
+    align-items: center;
     text-align: center;
+    text-decoration: none;
+    width: 280px;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
@@ -20,4 +49,13 @@
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 29px;
+
+    @media (min-width: @tablet-width) {
+        width: 300px;
+        padding: 21px 49px 21px 48px;
+    }
+    @media (min-width: @desktop-width) {
+        font-size: 21px;
+        padding: 20px 32px 20px 31px;
+    }
 }
