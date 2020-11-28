@@ -1,8 +1,66 @@
 .app {
     background: #F2F2F2;
+    width: 320px;
+}
+
+.app__wrapper {
+    @media (min-width: @tablet-width) {
+        .app__wrapper {
+          width: 616px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          border: 2px solid #E5E5E5;
+          border-radius: 1px;
+          background: #FFFFFF;
+        }
+        .app__list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+        .app__text {
+            align-items: center;
+            color: #283645;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+        }
+}
+    @media (min-width: @desktop-width) {
+        .app__wrapper {
+          width: 431px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          border: 2px solid #E5E5E5;
+          border-radius: 1px;
+          background: #FFFFFF;
+        }
+        .app__list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+        .app__text {
+            align-items: center;
+            color: #283645;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+        }
+}
 }
 
 .app__list {
     list-style: none;
+}
+
+.app__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    color: #283645;
 }
 

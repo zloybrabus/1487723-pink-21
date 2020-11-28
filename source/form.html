@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
     <header class="page-header">
@@ -49,7 +51,7 @@
                     </li>
                     <li class="draw__form-item">
                         <label class="draw__form-name" for="name"><b>ИМЯ:</b></label>
-                        <input class="draw__form-input" type="text" placeholder="Введите ваше имя *" name="name" required>
+                        <input class="draw__form-input draw__form-input-name" type="text" placeholder="Введите ваше имя *" name="name" required>
                     </li>
                     <li class="draw__form-item">
                         <label class="draw__form-name" for="name"><b>ОТЧЕСТВО:</b></label>
@@ -83,33 +85,40 @@
                         <input class="achievements__input" type="checkbox" name="hotel" value="Разгромил отель"><p class="achievements__text">Разгромил отель</p>
                     </li>
                 </ul>
-                <label class="draw__form-name" for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
-                <input class="draw__form-input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
-                <label class="draw__form-name" for="mail"><b>АДРЕС ПОЧТЫ</b></label>
-                <input class="draw__form-input" type="email" placeholder="Введите почту *" name="mail" required>
             </div>
         </section>
         </div>
 
+        <section class="contact-info">
+            <div class="contact-info__wrapper">
+             <ul class="contact-info__list">
+                <label class="contact-info-name" for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
+                <input class="contact-info-input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
+                <label class="contact-info-name" for="mail"><b>АДРЕС ПОЧТЫ</b></label>
+                <input class="contact-info-input" type="email" placeholder="Введите почту *" name="mail" required>
+            </div>
+        </section>
+         
+
         <div class="app">
-        <section class="form__app">
+        <section class="app__form">
             <div class="app__wrapper">
-                <h3 class="achievements__title">С каким приложением путешествовали?</h3>
+                <h3 class="app__title">С каким приложением путешествовали?</h3>
                     <ul class="app__list">
                         <li class="app__item">
                             <input type="radio" id="pink-ios"
                             name="text" value="Pink для iOS" checked>
-                            <label class="achievements__text" for="pink-ios">Pink для iOS</label>
+                            <label class="app__text" for="pink-ios">Pink для iOS</label>
                         </li>
                         <li class="app__item">
                             <input type="radio" id="pink-android"
                             name="text" value="Pink на Android">
-                            <label class="achievements__text" for="pink-android">Pink на Android</label>
+                            <label class="app__text" for="pink-android">Pink на Android</label>
                         </li>
                         <li class="app__item">
                             <input type="radio" id="Windows"
                             name="text" value="Windows Phone">
-                            <label class="achievements__text" for="Windows">Windows Phone</label>
+                            <label class="app__text" for="Windows">Windows Phone</label>
                         </li>
                 </ul>
             </div>
@@ -119,8 +128,8 @@
         <div class="send">
         <section class="send__form">
             <div class="send-form__wrapper">
-                <h3 class="achievements__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
-                    <div class="form__item">
+                <h3 class="send__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+                    <div class="send__item">
                         <label for="message"></label>
                         <input class="send__input" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
                     </div>
