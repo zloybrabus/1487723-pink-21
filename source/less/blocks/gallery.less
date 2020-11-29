@@ -15,6 +15,14 @@
     color: #283645;
 }
 
+.gallery__info {
+    text-align: center;
+    color: #283645;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+}
+
 .gallery__author-time {
     font-weight: 300;
     font-size: 12px;
@@ -30,4 +38,127 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
+}
+
+.gallery__wrapper {
+    @media (min-width: @tablet-width) {
+        .gallery__wrapper {
+            width: 660px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .gallery__info {
+            text-align: center;
+            color: #283645;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;            
+        }
+        .gallery__author-image-day {
+            width: 660px;
+        }
+        .gallery__author-info-day {
+            display: flex;
+            width: 620px;
+        }
+        .gallery__author-image{
+            width: 300px;
+        }
+        .gallery__author-info {
+            display: flex;
+            width: 300px;
+        }
+        .upload-form {
+            display: flex;
+            width: 660px;
+            background-color:#F2F2F2;
+        }
+        .upload__author-image {
+            width: 300px;
+        }
+        .upload__filters {
+            list-style: none;
+            flex-direction: column;
+        }
+        .upload__item {
+            width: 202px;
+            height: 2px;
+            background: #283645;
+        }
+        .yes__button {
+            width: 260px;
+            border: 3px solid #D22856;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+        .no__button {
+            width: 260px;
+            opacity: 0.1;
+            border: 3px solid #283645;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+      }
+      @media (min-width: @desktop-width) {
+        .gallery__wrapper{
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+    }
+        .gallery__info {
+            text-align: center;
+            color: #283645;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;            
+        }
+        .gallery__author-image-day {
+            width: 1200px;
+        }
+        .gallery__author-info-day {
+            display: flex;
+            width: 940px;
+        }
+        .gallery__author-image {
+            width: 300px;
+        }
+        .gallery__author-info {
+            display: flex;
+            width: 300px;
+        }
+        .upload-form {
+            display: flex;
+            width: 940px;
+            background-color:#F2F2F2;
+        }
+        .upload__author-image {
+            width: 300px;
+        }
+        .upload__filters {
+            list-style: none;
+            flex-direction: column;
+        }
+        .upload__item {
+            width: 288px;
+            height: 2px;
+            background: #283645;
+        }
+        .yes__button {
+            width: 183px;
+            border: 3px solid #D22856;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+        .no__button {
+            width: 183px;
+            opacity: 0.1;
+            border: 3px solid #283645;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+      }
 }
