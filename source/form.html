@@ -9,7 +9,7 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo"><picture class="page-header__logo-image"  src="https://via.placeholder.com/74x23" alt="Приложение Пинк"></a>
+        <a class="page-header__logo"><img class="page-header__logo-image"  src="..//img/pink.svg" alt="Приложение Пинк"></a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper"></div>
@@ -28,7 +28,7 @@
 
         <section class="intro">
             <div class="intro__wrapper">
-                <header class="intro__header">
+                <div class="intro__header">
                     <h2 class="visually-hidden">
                       Интро приложения
                     </h2>
@@ -37,9 +37,12 @@
                       безбашенное<br>
                       путешествие с Пинк!
                     </p>
-                </header>
+                </div>
             </div>
         </section>
+
+        <form class="page__form" action="https://echo.htmlacademy.ru" method="POST">
+
         <div class="draw">
         <section class="draw__form">
             <div class="draw__wrapper">
@@ -67,7 +70,7 @@
                 <h3 class="achievements__title">Ваши безбашенные<br> достижения в путешествии</h3>
                 <ul class="achievements__list">
                     <li class="achievements__item">
-                        <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked><p class="">Сделал селфи с акулой</p>
+                        <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked><p class="achievements__text">Сделал селфи с акулой</p>
                     </li>
                     <li class="achievements__item">
                         <input class="achievements__input" type="checkbox" name="biatch" value="Обгорел на пляже" checked><p class="achievements__text">Обгорел на пляже</p>
@@ -91,11 +94,13 @@
 
         <section class="contact-info">
             <div class="contact-info__wrapper">
+            <h3 class="contact-info__title">Контактная информация</h3>
              <ul class="contact-info__list">
                 <label class="contact-info-name" for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
                 <input class="contact-info-input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
                 <label class="contact-info-name" for="mail"><b>АДРЕС ПОЧТЫ</b></label>
                 <input class="contact-info-input" type="email" placeholder="Введите почту *" name="mail" required>
+             </ul>
             </div>
         </section>
          
@@ -138,11 +143,12 @@
             </div>
         </section>
         </div>
+        </form>
     </main>
 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <a class="page-footer__logo"><picture class="page-footer__logo-image"  src="https://via.placeholder.com/145x40" alt="Приложение Пинк"></a>
+            <a class="page-footer__logo"><img class="page-footer__logo-image"  src="..//img/logotype-blue-tablet.svg" alt="Приложение Пинк"></a>
             <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твтиттер</a>
@@ -156,7 +162,7 @@
             </ul>
             <div class="page-footer__copyright copyright">
                 <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><picture class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип академии"></a>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo" src="..//img/htmlacademy.svg" width="27" height="34" alt="Логотип академии"></a>
               </div>
         </div>
       </footer>
