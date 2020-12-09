@@ -2,6 +2,56 @@
     background: #F2F2F2;
 }
 
+    @media (min-width: @tablet-width) {
+        .achievements__wrapper {
+          width: 616px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          border: 2px solid #E5E5E5;
+          border-radius: 1px;
+          background: #FFFFFF;
+        }
+        .achievements {
+            background: #FFFFFF;
+        }
+        .achievements__title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 30px;
+            color: #D22856;
+        }
+        .achievements__list {
+            display: flex;
+            flex-direction: column;
+        }
+}
+    @media (min-width: @desktop-width) {
+        .achievements__wrapper {
+            width: 936px;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid #E5E5E5;
+            border-radius: 1px;
+          }
+          .achievements__title {
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 30px;
+              color: #D22856;
+          }
+          .achievements__list {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+          }
+}
+
+
 .achievements__title {
     text-align: center;
     text-transform: uppercase;
@@ -20,12 +70,4 @@
     font-size: 18px;
     line-height: 30px;
     color: #283645;
-}
-
-.achievements__input {
-    width: 35px;
-    height: 35px;
-    background: #FFFFFF;
-    border: 2px solid #E5E5E5;
-    border-radius: 1px;
 }
