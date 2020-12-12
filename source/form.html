@@ -14,10 +14,10 @@
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper"></div>
                 <ul class="main-nav__list">
-                    <li class="site-list__item"><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li class="site-list__item"><a href="catalog.html">ФОТОГРАФИИ</a></li>
-                    <li class="site-list__item"><a href="form.html">КОНКУРС</a></li>
-                    <li class="site-list__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+                    <li class="main-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="main-nav__item"><a href="catalog.html">ФОТОГРАФИИ</a></li>
+                    <li class="main-nav__item"><a href="form.html">КОНКУРС</a></li>
+                    <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
                 </ul>
         </nav>
     </header>
@@ -41,7 +41,8 @@
             </div>
         </section>
 
-        <form class="page__form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="form-main" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form-main__wrapper">
 
         <div class="draw">
         <section class="draw__form">
@@ -65,7 +66,7 @@
         </section>
         </div>
         <div class="achievements">
-        <section class="form__achievements">
+        <section class="achievements__form">
             <div class="achievements__wrapper">
                 <h3 class="achievements__title">Ваши безбашенные<br> достижения в путешествии</h3>
                 <ul class="achievements__list">
@@ -132,16 +133,17 @@
 
         <div class="send">
         <section class="send__form">
-            <div class="send-form__wrapper">
+            <div class="send__form__wrapper">
                 <h3 class="send__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
                     <div class="send__item">
                         <label for="message"></label>
                         <input class="send__input" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="message" required>
                     </div>
                     <button class="send__button" type="button">Отправить форму</button>
-                    <p class="form__necessarily">* — обязательные поля</p>
+                    <p class="send__form__necessarily">* — обязательные поля</p>
             </div>
         </section>
+        </div>
         </div>
         </form>
     </main>
