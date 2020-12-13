@@ -1,7 +1,6 @@
 .achievements {
     background: #F2F2F2;
 }
-
     @media (min-width: @tablet-width) {
         .achievements__wrapper {
           width: 616px;
@@ -27,6 +26,9 @@
             display: flex;
             flex-direction: column;
         }
+        .achievements {
+            background: #FFFFFF;
+        }
 }
     @media (min-width: @desktop-width) {
         .achievements__wrapper {
@@ -48,9 +50,24 @@
               display: flex;
               justify-content: space-between;
               flex-wrap: wrap;
+              flex-direction: unset;
+              margin: 0;
+              padding-inline-start: 60px;
+              padding-inline-end: 60px;
+          }
+          .achievements__item {
+              display: flex;
+              align-items: center;
+          }
+          .achievements__text {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+          }
+          .achievements__input {
+              margin-right: 22px;
           }
 }
-
 
 .achievements__title {
     text-align: center;
