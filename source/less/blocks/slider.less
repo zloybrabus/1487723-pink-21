@@ -1,4 +1,91 @@
 .slider {
     display: flex;
     justify-content: center;
+    padding-top: 44px;
+}
+
+.slider__toggles {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slider__toggle {
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: #bec2c7;
+}
+
+.slider__toggle--current {
+    overflow: visible;
+    background-color: transparent;
+}
+@media (min-width: @desktop-width) {
+    .reviews__toggles {
+        display: block;
+        top: 53%;
+        height: 50px;
+        width: 950px;
+        margin: 0 auto;
+    }
+    .reviews__toggles label {
+        position: relative;
+        width: 25px;
+        height: 45px;
+        border-radius: 0;
+    }
+    .reviews__toggles label[for=btn2]::before {
+        top: 0;
+        transform: rotate(45deg);
+        content: '';
+        position: absolute;
+        right: -3px;
+        width: 30px;
+        height: 2px;
+        background-color: #7e868f;
+        opacity: .6;
+        }
+    .reviews__toggles label[for=btn2]::after {
+        top: 12px;
+        transform: rotate(-45deg);
+        content: '';
+        position: absolute;
+        right: -3px;
+        width: 30px;
+        height: 2px;
+        background-color: #7e868f;
+        opacity: .6;
+        }
+        .reviews__toggles label[for=btn3]::before {
+            top: 0;
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            right: -3px;
+            width: 30px;
+            height: 2px;
+            background-color: #7e868f;
+            opacity: .6;
+            }
+        .reviews__toggles label[for=btn3]::after {
+            top: 12px;
+            transform: rotate(-45deg);
+            content: '';
+            position: absolute;
+            right: -3px;
+            width: 30px;
+            height: 2px;
+            background-color: #7e868f;
+            opacity: .6;
+            }
 }

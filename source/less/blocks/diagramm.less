@@ -1,10 +1,47 @@
 .diagramm {
     display: none;
-    @media (min-width: @tablet-width) {
-        .diagramm{
-            display: block;
-        }
-      }
+}
+
+@media (min-width: @tablet-width) {
+.diagramm{
+    display: block;
+    padding: 55px 7% 40px;
+    background-color: #fff;
+}
+
+.diagramm__item {
+    max-width: 300px;
+    position: relative;
+    margin: 50px 0 50px 50%;
+}
+
+.diagramm__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -305px;
+    top: -40px;
+    width: 242px;
+    height: 280px;
+    background: url("..//img/timer.svg") no-repeat center;
+    background-size: cover;
+}
+
+.diagramm__item::after {
+    content: '24';
+    display: block;
+    position: absolute;
+    left: -288px;
+    top: 17px;
+    width: 205px;
+    height: 205px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 200px;
+    color: #d22856;
+    background: url("..//img/diagram-fill.svg") no-repeat center;
+    background-size: contain;
 }
 
 .diagramm__title {
@@ -33,4 +70,35 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+}
+}
+
+@media (min-width: @desktop-width) {
+    .diagramm {
+        background: #F2F2F2;
+        padding: 65px 7% 90px;
+        background-position: 15% center;
+    }
+    .diagramm__wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .diagramm__item {
+        margin-left: 38%;
+        max-width: 530px;
+    }
+    .diagramm__item::before {
+        left: -345px;
+        top: -93px;
+        width: 300px;
+        height: 346px;
+    }
+    .diagramm__item::after {
+        left: -321px;
+        top: -24px;
+        width: 253px;
+        height: 254px;
+        font-size: 120px;
+        line-height: 240px;
+    }
 }

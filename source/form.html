@@ -9,18 +9,19 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo"><img class="page-header__logo-image"  src="..//img/pink.svg" alt="Приложение Пинк"></a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper"></div>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li class="main-nav__item"><a href="catalog.html">ФОТОГРАФИИ</a></li>
-                    <li class="main-nav__item"><a href="form.html">КОНКУРС</a></li>
-                    <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
-                </ul>
-        </nav>
-    </header>
+        <div class="page-header__wrap">
+              <a class="page-header__logo"><img src="..//img/pink.svg" width="74" height="23"   alt="Приложение Пинк"></a>
+        </div>
+              <nav class="main-menu main-menu--closed">
+                <button class="main-menu__toggle" type="button"></button>
+                  <ul class="main-menu__list">
+                      <li class="main-menu__item"><a href="index.html">ГЛАВНАЯ</a></li>
+                      <li class="main-menu__item"><a href="catalog.html">ФОТОГРАФИИ</a></li>
+                      <li class="main-menu__item"><a href="form.html">КОНКУРС</a></li>
+                      <li class="main-menu__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+                  </ul>
+              </nav>
+      </header>
 
     <main class="page-form">
 
@@ -96,15 +97,14 @@
         <section class="contact-info">
             <div class="contact-info__wrapper">
             <h3 class="contact-info__title">Контактная информация</h3>
-             <ul class="contact-info__list">
+            <ul class="contact-info__list">
                 <label class="contact-info-name" for="phone"><b>НОМЕР ТЕЛЕФОНА</b></label>
                 <input class="contact-info-input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
                 <label class="contact-info-name" for="mail"><b>АДРЕС ПОЧТЫ</b></label>
                 <input class="contact-info-input" type="email" placeholder="Введите почту *" name="mail" required>
-             </ul>
+            </ul>
             </div>
         </section>
-         
 
         <div class="app">
         <section class="app__form">
