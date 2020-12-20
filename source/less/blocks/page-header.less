@@ -1,17 +1,11 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  box-sizing: border-box;
   width: 100%;
-  max-width: 1500px;
-  min-width: 320px;
-  background-color: rgba(0,0,0,.3);
-  z-index: 99;
 }
 
 .page-header__wrap {
   position: relative;
   height: 66px;
+  background-color: rgba(0,0,0,.3);
 }
 
 .page-header__logo {
@@ -21,6 +15,10 @@
   left: 20px;
   max-width: 150px;
   height: auto;
+}
+
+.main-menu {
+  margin-bottom: -66px;
 }
 
 .main-menu__toggle {
@@ -39,6 +37,7 @@
 
 .main-menu__list {
   min-width: 320px;
+  height: 330px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -101,6 +100,11 @@
   background-color: #fff;
 }
 
+.page-header__wrap--opened {
+  background: #283645;
+  box-shadow: 0px 1px 0px #000000;
+}
+
 @media (min-width: @tablet-width) {
   .page-header__logo {
     position: absolute;
@@ -115,6 +119,12 @@
     position: absolute;
     top: 46px;
     right: 40px;
+  }
+  .main-menu {
+    margin-bottom: -110px;
+  }
+  .main-menu__list {
+    height: 365px;
   }
 }
 

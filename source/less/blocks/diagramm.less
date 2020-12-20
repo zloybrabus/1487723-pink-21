@@ -1,21 +1,21 @@
 .diagramm {
-    display: none;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-.diagramm{
+  .diagramm {
     display: block;
     padding: 55px 7% 40px;
     background-color: #fff;
-}
+  }
 
-.diagramm__item {
+  .diagramm__item {
     max-width: 300px;
     position: relative;
     margin: 50px 0 50px 50%;
-}
+  }
 
-.diagramm__item::before {
+  .diagramm__item::before {
     content: '';
     display: block;
     position: absolute;
@@ -25,9 +25,9 @@
     height: 280px;
     background: url("..//img/timer.svg") no-repeat center;
     background-size: cover;
-}
+  }
 
-.diagramm__item::after {
+  .diagramm__item::after {
     content: '24';
     display: block;
     position: absolute;
@@ -42,27 +42,27 @@
     color: #d22856;
     background: url("..//img/diagram-fill.svg") no-repeat center;
     background-size: contain;
-}
+  }
 
-.diagramm__title {
+  .diagramm__title {
     display: flex;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
     align-items: center;
     color: #000000;
-}
+  }
 
-.diagramm__text {
+  .diagramm__text {
     display: flex;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     align-items: center;
     color: #283645;
-}
+  }
 
-.diagramm__information {
+  .diagramm__information {
     display: flex;
     align-items: center;
     text-decoration-line: underline;
@@ -70,35 +70,39 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-}
+  }
 }
 
 @media (min-width: @desktop-width) {
-    .diagramm {
-        background: #F2F2F2;
-        padding: 65px 7% 90px;
-        background-position: 15% center;
-    }
-    .diagramm__wrapper {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .diagramm__item {
-        margin-left: 38%;
-        max-width: 530px;
-    }
-    .diagramm__item::before {
-        left: -345px;
-        top: -93px;
-        width: 300px;
-        height: 346px;
-    }
-    .diagramm__item::after {
-        left: -321px;
-        top: -24px;
-        width: 253px;
-        height: 254px;
-        font-size: 120px;
-        line-height: 240px;
-    }
+  .diagramm {
+    background: #F2F2F2;
+    padding: 65px 7% 90px;
+    background-position: 15% center;
+  }
+
+  .diagramm__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .diagramm__item {
+    margin-left: 38%;
+    max-width: 530px;
+  }
+
+  .diagramm__item::before {
+    left: -345px;
+    top: -93px;
+    width: 300px;
+    height: 346px;
+  }
+
+  .diagramm__item::after {
+    left: -321px;
+    top: -24px;
+    width: 253px;
+    height: 254px;
+    font-size: 120px;
+    line-height: 240px;
+  }
 }
