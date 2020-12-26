@@ -1,67 +1,92 @@
-.page-main {
-    padding-top: 36px;
-}
-
 .intro {
-    background: #1D2631;
-    padding-top: 0;
+  padding-top: 0;
+  text-align: center;
 }
 
-.intro-header {
-    background: url('..//img/back-mobile.png');
+.intro::before {
+  content: '';
+  display: block;
+  height: 463px;
+  width: 100%;
+  background: url("/img/Grouponemobile.png") no-repeat 40% bottom, url('../img/back-mobile.png') no-repeat  top;
+  background-size: auto, cover;
+}
+
+.intro__wrapper {
+  padding: 20px;
+  text-align: center;
+  background: #1D2631;
 }
 
 .intro__slogan {
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 120%;
-}
-@media (min-width: @tablet-width) {
-    .page-main {
-        padding-top: 110px;
-    }
-    .intro__wrapper {
-        width: 660px;
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
-    }
-}
-@media (min-width: @desktop-width) {
-    .intro__wrapper{
-        width: 1200px;
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
-    }
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .button-main {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    width: 280px;
-    padding-top: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    color: #FFFFFF;
-    padding: 21px 39px 21px 38px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 29px;
+  width: 280px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  background: transparent;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 29px;
+}
 
-    @media (min-width: @tablet-width) {
-        width: 300px;
-        padding: 21px 49px 21px 48px;
-    }
-    @media (min-width: @desktop-width) {
-        font-size: 21px;
-        padding: 20px 32px 20px 31px;
-    }
+@media (min-width: @tablet-width) {
+  .intro {
+    background: url('/img/Groupthreetablet.png') no-repeat bottom, url('/img/backtablet.png') no-repeat;
+    padding-top: 110px;
+    background-size: 600px, cover;
+    padding: 180px 5% 60px;
+  }
+
+  .intro::before {
+    display: none;
+  }
+
+  .intro__wrapper {
+    padding: 0;
+    width: 300px;
+    margin: 0 62% 0 auto;
+    background-color: transparent;
+  }
+
+  .intro__slogan {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 35px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 52px;
+    color: #fff;
+  }
+
+  .button-main {
+    width: 300px;
+    padding: 21px 49px 21px 48px;
+    border: 3px solid #fff;
+    line-height: 1;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    background: url("/img/Groupfivedesktop.png") no-repeat center bottom, url("..//img/back-desktop.png") no-repeat center;
+    background-color: #1d2631;
+    background-size: 1050px, cover;
+  }
+
+  .button-main {
+    font-size: 21px;
+    padding: 20px 32px 20px 31px;
+  }
 }
