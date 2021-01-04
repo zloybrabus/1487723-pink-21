@@ -43,8 +43,13 @@
     margin: 0;
   }
 
+  .reviews__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .reviews__text {
-    order: -1;
+    order: 1;
     text-align: center;
     font-weight: normal;
     font-size: 18px;
@@ -53,6 +58,7 @@
   }
 
   .reviews__author-name {
+    order: 2;
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -61,6 +67,7 @@
     padding-bottom: 0;
   }
   .reviews__author-age {
+    order: 3;
     display: block;
     width: 300px;
     font-size: 14px;
