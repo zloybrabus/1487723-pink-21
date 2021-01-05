@@ -6,14 +6,20 @@
   line-height: 30px;
 }
 
-.form-main__wrapper {
+.form-main {
   padding: 33px 0 30px;
   background: #fff;
   text-align: center;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
-  .form-main__wrapper {
+  .form-main {
     display: flex;
     flex-direction: column;
     max-width: 816px;
@@ -28,7 +34,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-main__wrapper {
+  .form-main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

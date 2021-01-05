@@ -1,8 +1,4 @@
-.achievements {
-  background: #F2F2F2;
-}
-
-.achievements__wrapper {
+.achievements__form {
   box-sizing: border-box;
   padding: 40px 6% 10px;
   background: #f2f2f2;
@@ -87,8 +83,6 @@
 @media (min-width: @tablet-width) {
   .achievements__form {
     order: 3;
-  }
-  .achievements__wrapper {
     position: relative;
     margin: 0 0 40px;
     padding: 33px 9.3%;
@@ -116,7 +110,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .achievements__wrapper {
+  .achievements__form {
     width: 100%;
     margin-bottom: 53px;
     padding: 41px 6.1% 13px;
@@ -127,8 +121,11 @@
     justify-content: space-between;
   }
   .achievements__item {
-    max-width: 33%;
     margin-left: 0;
     margin-right: 20px;
+  }
+  .achievements__list_column {
+    max-width: 33%;
+    text-align: left;
   }
 }
