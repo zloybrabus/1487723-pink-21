@@ -1,15 +1,15 @@
-.draw__form {  
+.draw {  
   margin-bottom: 43px;
 }
 
-.draw__form-item {
+.draw__item {
   display: block;
   width: 280px;
   margin: 0 auto 20px;
   text-align: left;
 }
 
-.draw__form-name {
+.draw__item-name {
   margin-left: 23px;
   color: #de6183;
   font-size: 14px;
@@ -18,12 +18,12 @@
   text-transform: uppercase;
 }
 
-.draw__form-input__wrapper {
+.draw__input__wrapper {
   position: relative;
   display: block;
 }
 
-.draw__form-input {
+.draw__input {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -37,29 +37,29 @@
 }
 
 @media (min-width: @tablet-width) {
-  .draw__form-item {
+  .draw__item {
     display: flex;
     align-items: center;
     width: auto;
   }
-  .draw__form-name {
+  .draw__item-name {
     margin-left: 0;
     margin-right: 20px;
   }
-  .draw__form-input__wrapper {
+  .draw__input__wrapper {
     flex-grow: 1;
     min-width: 400px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .draw__form {
+  .draw {
     width: 46%;
   }
-  .draw__form-item {
+  .draw__item {
     margin: 0 0 54px;
   }
-  .draw__form-item:last-child {
+  .draw__item:last-child {
     margin-bottom: 0;
   }
 }

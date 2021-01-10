@@ -33,75 +33,75 @@
 
     <form class="form-main" action="https://echo.htmlacademy.ru" method="POST">
 
-        <h2 class="form-title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+        <h2 class="form-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
           вашу бонусную карту!</h2>
 
-        <fieldset class="draw__form">
+        <fieldset class="draw">
 
-            <label class="draw__form-item">
-              <span class="draw__form-name">Фамилия</span>
-              <span class="draw__form-input__wrapper">
-                <input class="draw__form-input" type="text" placeholder="Укажите фамилию *" name="name" required>
+            <label class="draw__item">
+              <span class="draw__item-name">Фамилия</span>
+              <span class="draw__input__wrapper">
+                <input class="draw__input" type="text" placeholder="Укажите фамилию *" name="name" required>
               </span>
             </label>
 
-            <label class="draw__form-item">
-              <span class="draw__form-name">Имя</span>
-              <span class="draw__form-input__wrapper">
-                <input class="draw__form-input" type="text" placeholder="Введите ваше имя *" name="name" required>
+            <label class="draw__item">
+              <span class="draw__item-name">Имя</span>
+              <span class="draw__input__wrapper">
+                <input class="draw__input" type="text" placeholder="Введите ваше имя *" name="name" required>
               </span>
             </label>
 
-            <label class="draw__form-item">
-              <span class="draw__form-name">Отчество</span>
-              <span class="draw__form-input__wrapper">
-                <input class="draw__form-input" type="text" placeholder="Ну и отчество тоже" name="name" required>
+            <label class="draw__item">
+              <span class="draw__item-name">Отчество</span>
+              <span class="draw__input__wrapper">
+                <input class="draw__input" type="text" placeholder="Ну и отчество тоже" name="name" required>
               </span>
             </label>
         </fieldset>
 
-        <fieldset class="achievements__form">
-            <legend class="achievements__form-title">Ваши безбашенные<br> достижения в путешествии</legend>
-            <div class="achievements__form-list">
-              <div class="achievements__form-list_column">
-              <label class="achievements__form-item">
-                <input class="achievements__form-input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked>
-                <span class="achievements__form-checkbox"></span>
-                <span class="achievements__form-text">Сделал селфи с акулой</span>
+        <fieldset class="achievements">
+            <legend class="achievements__title">Ваши безбашенные<br> достижения в путешествии</legend>
+            <div class="achievements__list">
+              <div class="achievements__list_column">
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked>
+                <span class="achievements__checkbox"></span>
+                <span class="achievements__text">Сделал селфи с акулой</span>
               </label>
 
-              <label class="achievements__form-item">
-                <input class="achievements__form-input" type="checkbox" name="biatch" value="Обгорел на пляже" checked>
-                <span class="achievements__form-checkbox"></span>
-                <span class="achievements__form-text">Обгорел на пляже</span>
-              </label>
-            </div>
-
-            <div class="achievements__form-list_column">
-              <label class="achievements__form-item">
-                <input class="achievements__form-input" type="checkbox" name="noris" value="Видел Чака Норриса">
-                <span class="achievements__form-checkbox"></span>
-                <span class="achievements__form-text">Видел Чака Норриса</span>
-              </label>
-
-              <label class="achievements__form-item">
-                <input class="achievements__form-input" type="checkbox" name="souvenirs" value="Накупил сувениров">
-                <span class="achievements__form-checkbox"></span>
-                <span class="achievements__form-text">Накупил сувениров</span>
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="biatch" value="Обгорел на пляже" checked>
+                <span class="achievements__checkbox"></span>
+                <span class="achievements__text">Обгорел на пляже</span>
               </label>
             </div>
 
-            <div class="achievements__form-list_column">
-              <label class="achievements__form-item">
-                <input class="achievements__form-input" type="checkbox" name="tower" value="Удержал башню" checked>
-                <span class="achievements__form-checkbox"></span>
-                <span class="achievements__form-text">Удержал башню</span>
+            <div class="achievements__list_column">
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="noris" value="Видел Чака Норриса">
+                <span class="achievements__checkbox"></span>
+                <span class="achievements__text">Видел Чака Норриса</span>
               </label>
 
-              <label class="achievements__form-item">
-                <input class="achievements__form-input" type="checkbox" name="hotel" value="Разгромил отель">
-                <span class="achievements__form-checkbox"></span>
-                <span class="achievements__form-text">Разгромил отель</span>
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="souvenirs" value="Накупил сувениров">
+                <span class="achievements__checkbox"></span>
+                <span class="achievements__text">Накупил сувениров</span>
+              </label>
+            </div>
+
+            <div class="achievements__list_column">
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="tower" value="Удержал башню" checked>
+                <span class="achievements__checkbox"></span>
+                <span class="achievements__text">Удержал башню</span>
+              </label>
+
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="hotel" value="Разгромил отель">
+                <span class="achievements__checkbox"></span>
+                <span class="achievements__text">Разгромил отель</span>
               </label>
             </div>
             </div>
@@ -112,15 +112,15 @@
 
             <div class="contact-info__item--container">
             <label class="contact-info__item">
-              <span class="contact-info-name">Номер телефона</span>
-              <span class="contact-info-input__wrapper contact-info-input__wrapper--phone-icon">
-                <input class="contact-info-input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
+              <span class="contact-info__name">Номер телефона</span>
+              <span class="contact-info__input-wrapper contact-info__input-wrapper--phone-icon">
+                <input class="contact-info__input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
               </span>
             </label>
             <label class="contact-info__item">
-              <span class="contact-info-name">Адрес почты</span>
-              <span class="contact-info-input__wrapper contact-info-input__wrapper--mail-icon">
-                <input class="contact-info-input" type="email" placeholder="Введите почту *" name="mail" required>
+              <span class="contact-info__name">Адрес почты</span>
+              <span class="contact-info__input-wrapper contact-info__input-wrapper--mail-icon">
+                <input class="contact-info__input" type="email" placeholder="Введите почту *" name="mail" required>
               </span>
             </label>
           </div>
