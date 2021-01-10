@@ -22,23 +22,12 @@
         <li class="main-menu__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
       </ul>
     </nav>
-    <section class="intro">
-      <div class="intro__wrapper">
-        <div class="intro__header">
-          <h2 class="visually-hidden">
-            Интро приложения
-          </h2>
-          <p class="intro__slogan">
-            Конкурс на самое<br>
-            безбашенное<br>
-            путешествие с Пинк!
-          </p>
-        </div>
-      </div>
-    </section>
   </header>
 
   <main class="page-form">
+    <div class="page-title">
+      <h2 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
 
     <h1 class="visually-hidden">Заполните форму регистрации</h1>
 
@@ -72,50 +61,50 @@
         </fieldset>
 
         <fieldset class="achievements__form">
-            <legend class="achievements__title">Ваши безбашенные<br> достижения в путешествии</legend>
-            <ul class="achievements__list">
-              <div class="achievements__list_column">
-              <li class="achievements__item">
-                <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked>
-                <span class="achievements__checkbox"></span>
-                <span class="achievements__text">Сделал селфи с акулой</span>
-              </li>
+            <legend class="achievements__form-title">Ваши безбашенные<br> достижения в путешествии</legend>
+            <div class="achievements__form-list">
+              <div class="achievements__form-list_column">
+              <label class="achievements__form-item">
+                <input class="achievements__form-input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked>
+                <span class="achievements__form-checkbox"></span>
+                <span class="achievements__form-text">Сделал селфи с акулой</span>
+              </label>
 
-              <li class="achievements__item">
-                <input class="achievements__input" type="checkbox" name="biatch" value="Обгорел на пляже" checked>
-                <span class="achievements__checkbox"></span>
-                <span class="achievements__text">Обгорел на пляже</span>
-              </li>
+              <label class="achievements__form-item">
+                <input class="achievements__form-input" type="checkbox" name="biatch" value="Обгорел на пляже" checked>
+                <span class="achievements__form-checkbox"></span>
+                <span class="achievements__form-text">Обгорел на пляже</span>
+              </label>
             </div>
 
-            <div class="achievements__list_column">
-              <li class="achievements__item">
-                <input class="achievements__input" type="checkbox" name="noris" value="Видел Чака Норриса">
-                <span class="achievements__checkbox"></span>
-                <span class="achievements__text">Видел Чака Норриса</span>
-              </li>
+            <div class="achievements__form-list_column">
+              <label class="achievements__form-item">
+                <input class="achievements__form-input" type="checkbox" name="noris" value="Видел Чака Норриса">
+                <span class="achievements__form-checkbox"></span>
+                <span class="achievements__form-text">Видел Чака Норриса</span>
+              </label>
 
-              <li class="achievements__item">
-                <input class="achievements__input" type="checkbox" name="souvenirs" value="Накупил сувениров">
-                <span class="achievements__checkbox"></span>
-                <span class="achievements__text">Накупил сувениров</span>
-              </li>
+              <label class="achievements__form-item">
+                <input class="achievements__form-input" type="checkbox" name="souvenirs" value="Накупил сувениров">
+                <span class="achievements__form-checkbox"></span>
+                <span class="achievements__form-text">Накупил сувениров</span>
+              </label>
             </div>
 
-            <div class="achievements__list_column">
-              <li class="achievements__item">
-                <input class="achievements__input" type="checkbox" name="tower" value="Удержал башню" checked>
-                <span class="achievements__checkbox"></span>
-                <span class="achievements__text">Удержал башню</span>
-              </li>
+            <div class="achievements__form-list_column">
+              <label class="achievements__form-item">
+                <input class="achievements__form-input" type="checkbox" name="tower" value="Удержал башню" checked>
+                <span class="achievements__form-checkbox"></span>
+                <span class="achievements__form-text">Удержал башню</span>
+              </label>
 
-              <li class="achievements__item">
-                <input class="achievements__input" type="checkbox" name="hotel" value="Разгромил отель">
-                <span class="achievements__checkbox"></span>
-                <span class="achievements__text">Разгромил отель</span>
-              </li>
+              <label class="achievements__form-item">
+                <input class="achievements__form-input" type="checkbox" name="hotel" value="Разгромил отель">
+                <span class="achievements__form-checkbox"></span>
+                <span class="achievements__form-text">Разгромил отель</span>
+              </label>
             </div>
-            </ul>
+            </div>
         </fieldset>
 
         <fieldset class="contact-info">
@@ -137,7 +126,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="app__form">
+        <fieldset class="app">
             <legend class="app__title">С каким приложением путешествовали?</legend>
             <div class="app__list">
               <label class="app__item">
@@ -158,12 +147,12 @@
             </div>
         </fieldset>
 
-          <fieldset class="send__form">
+          <fieldset class="send">
               <legend class="send__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
               <div class="send__item">
                 <label for="message"></label>
-                <input class="send__input" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях"
-                  name="message" required>
+                <textarea class="send__input" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях"
+                  name="message" required></textarea>
               </div>
           </fieldset>
           <div class="send__button-wrapper">
