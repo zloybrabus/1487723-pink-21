@@ -1,0 +1,88 @@
+.form-main__title {
+  width: 280px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form-main {
+  padding: 33px 0 30px;
+  background: #fff;
+  text-align: center;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-title {
+  box-sizing: border-box;
+  min-height: 236px;
+  padding: 53px 6% 40px;
+  background: url('/img/back-mobile.png') no-repeat top;
+  background-size: cover;
+  text-align: center;
+}
+
+.page-title__text {
+  width: 253px;
+  margin: 44px auto 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 816px;
+    margin: 0 auto;
+    padding: 40px 4.7%;
+  }
+  .form-main__title {
+    width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .page-title {
+    padding: 130px 0;
+    background: url('/img/backtablet.png') no-repeat center 7%;
+    background-size: cover;
+    background-color: #1d2631;
+  }
+  .page-title__text {
+    width: 500px;
+    font-size: 50px;
+    line-height: 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1170px;
+    padding: 80px 10.3% 0;
+  }
+  .form-main__title {
+    width: 770px;
+    margin: 0 auto 50px;
+  }
+  .page-title {
+    padding: 130px 0 40px;
+    background: url('/img/back-desktop.png') no-repeat center top;
+    background-size: cover;
+    background-color: #1d2631;
+    margin-top: -110px;
+  }
+  .page-title__text {
+    width: 747px;
+    margin: 44px auto 60px;
+  }
+}
