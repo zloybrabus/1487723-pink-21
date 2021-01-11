@@ -1,145 +1,123 @@
-.upload__info {
+.upload__title {
+  max-width: 280px;
+  margin: 0 auto 40px;
   text-align: center;
-  color: #283645;
-  font-weight: normal;
   font-size: 14px;
+  font-weight: 400;
   line-height: 30px;
 }
 
-.upload-form {
-  width: 320px;
-  background: #F2F2F2;
+.upload__content {
+  width: 100%;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
-.upload-btn {
+.upload__form-picture {
+  margin: 0;
+  padding: 20px 0;
+  border: none;
+  text-align: center;
+  line-height: 0;
+}
+
+.upload__author-image {
+  display: block;
+  line-height: 0;
+}
+
+.upload__filter-controls {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.upload__btn--yes {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 280px;
-  border: 3px solid #D22856;
-  box-sizing: border-box;
-  border-radius: 30px;
-  text-align: center;
-  padding: 21px 90px 21px 91px;
-  color: #D22856;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+  margin: 0 auto 30px;
 }
 
-.upload__btn--no {
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.upload__filter-controls input {
+  display: none;
+}
+
+.upload label[for=upload-filter-one] {
+  width: 44px;
+  height: 44px;
+  background: url('/img/crop.svg') no-repeat center;
+}
+
+.upload label[for=upload-filter-two] {
+  width: 48px;
+  height: 48px;
+  background: url('/img/fill.svg') no-repeat center;
+}
+
+.upload label[for=upload-filter-three] {
+  width: 32px;
+  height: 32px;
+  background: url('/img/contrast.svg') no-repeat center;
+}
+
+.upload__range-controls {
+  margin: 0 auto 30px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.range-controls__wrapper--one, .range-controls__wrapper--two {
+  display: none;
+}
+
+.range-filter {
+  width: 240px;
+  height: 18px;
+  margin: 0 auto 30px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+input {
+  line-height: normal;
+}
+
+.upload__button-wrapper {
   width: 280px;
-  border: 3px solid #D22856;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+.upload__button {
+  min-width: 280px;
+  background-color: transparent;
+  outline: none;
+  display: block;
   box-sizing: border-box;
+  margin: 0 auto 20px;
+  padding: 15px;
+  border: 2px solid #fff;
   border-radius: 30px;
-  text-align: center;
-  padding: 21px 90px 21px 91px;
-  color: #D22856;
-  font-weight: bold;
+  font-family: "Open sans";
   font-size: 18px;
-  line-height: 18px;
-  opacity: 0.1;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-@media (min-width: @tablet-width) {
-  .upload-form {
-    display: flex;
-    width: 660px;
-    flex-direction: column;
-    background-color: #F2F2F2;
-  }
-
-  .upload__author-image {
-    width: 300px;
-  }
-
-  .upload__filters {
-    list-style: none;
-    flex-direction: column;
-  }
-
-  .upload__item {
-    width: 202px;
-    height: 2px;
-    background: #283645;
-  }
-
-  .upload__btn--yes {
-    width: 260px;
-    text-align: center;
-    color: #D22856;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    padding: 21px 90px 21px 91px;
-    border: 3px solid #D22856;
-    box-sizing: border-box;
-    border-radius: 30px;
-  }
-
-  .upload__btn--no {
-    width: 260px;
-    opacity: 0.1;
-    text-align: center;
-    color: #D22856;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    padding: 21px 90px 21px 91px;
-    border: 3px solid #D22856;
-    box-sizing: border-box;
-    border-radius: 30px;
-  }
+.upload__button--submit {
+  color: #d22856;
+  border: 3px solid #d22856;
 }
 
-@media (min-width: @desktop-width) {
-  .upload-form {
-    display: flex;
-    width: 940px;
-    background-color: #F2F2F2;
-  }
-
-  .upload__author-image {
-    width: 300px;
-  }
-
-  .upload__filters {
-    list-style: none;
-    flex-direction: column;
-  }
-
-  .upload__item {
-    width: 288px;
-    height: 2px;
-    background: #283645;
-  }
-
-  .upload__btn--yes {
-    width: 183px;
-    text-align: center;
-    color: #D22856;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    padding: 21px 90px 21px 91px;
-    border: 3px solid #D22856;
-    box-sizing: border-box;
-    border-radius: 30px;
-  }
-
-  .upload__btn--no {
-    width: 183px;
-    text-align: center;
-    color: #D22856;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    padding: 21px 90px 21px 91px;
-    border: 3px solid #D22856;
-    box-sizing: border-box;
-    border-radius: 30px;
-  }
+.upload__button--reset {
+  color: #b5b9be;
+  border: 3px solid #b5b9be;
+  opacity: .6;
 }
