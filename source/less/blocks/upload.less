@@ -64,6 +64,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .upload__range-controls {
+  position: relative;
   margin: 0 auto 30px;
   padding: 0;
   text-align: center;
@@ -71,17 +72,16 @@ input[type=checkbox], input[type=radio] {
   border-bottom: 1px solid #dddfe0;
 }
 
-.range-controls__wrapper--one, .range-controls__wrapper--two {
+.upload__range-controls__wrapper-one, .upload__range-controls__wrapper-two {
   display: none;
 }
 
-.range-filter {
+.upload__range-filter {
   width: 240px;
-  height: 18px;
-  margin: 0 auto 30px;
-  background-color: transparent;
-  outline: none;
-  border: none;
+  height: 2px;
+  margin: 0 auto;
+  background: #283645;
+  margin-bottom: 34px;
 }
 
 input {
@@ -122,6 +122,20 @@ input {
   opacity: .6;
 }
 
+.upload__range-filter-toggle {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 103px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+  background: #f2f2f2;
+  z-index: 10;
+  cursor: pointer;
+}
+
 @media (min-width: @tablet-width) {
   .upload {
     max-width: 816px;
@@ -148,7 +162,7 @@ input {
     margin: 0 0 63px auto;
     border: none;
   }
-  .range-controls__wrapper {
+  .upload__range-controls__wrapper {
     display: block;
     position: relative;
     height: 45px;
@@ -156,11 +170,11 @@ input {
     margin-top: 11px;
     border-bottom: 1px solid #dddfe0;
   }
-  .range-filter {
+  .upload__range-filter {
     width: 202px;
     margin: 0 0 0 55px;
   }
-  .range-controls__wrapper::before {
+  .upload__range-controls__wrapper::before {
     content: '';
     position: absolute;
     top: -5px;
@@ -169,13 +183,13 @@ input {
     height: 27px;
     background: gray;
   }
-  .range-controls__wrapper--one::before {
+  .upload__range-controls__wrapper-one::before {
     background: url('/img/croptablet.svg') no-repeat center;
   }
-  .range-controls__wrapper--two::before {
+  .upload__range-controls__wrapper-two::before {
     background: url('/img/filltablet.svg') no-repeat center;
   }
-  .range-controls__wrapper--three::before {
+  .upload__range-controls__wrapper-three::before {
     background: url('/img/contrasttablet.svg') no-repeat center;
   }
   .upload__button-wrapper {
@@ -196,31 +210,31 @@ input {
     margin: 0 0 146px auto;
     border: none;
   }
-  .range-controls__wrapper {
+  .upload__range-controls__wrapper {
     margin-bottom: 26px;
   }
-  .range-controls__wrapper--one::before {
+  .upload__range-controls__wrapper-one::before {
     top: -14px;
     left: 0;
     width: 44px;
     height: 44px;
     background: url('/img/croptablet.svg') no-repeat center;
   }
-  .range-controls__wrapper--two::before {
+  .upload__range-controls__wrapper-two::before {
     top: -10px;
     left: 0;
     width: 48px;
     height: 48px;
     background: url('/img/filltablet.svg') no-repeat center;
   }
-  .range-controls__wrapper--three::before {
+  .upload__range-controls__wrapper-three::before {
     top: -7px;
     left: 4px;
     width: 36px;
     height: 36px;
     background: url('/img/contrasttablet.svg') no-repeat center;
   }
-  .range-filter {
+  .upload__range-filter {
     width: 288px;
     margin: 0 0 0 92px;
   }

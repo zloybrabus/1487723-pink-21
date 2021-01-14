@@ -36,7 +36,7 @@
   margin: 0 auto 21px;
 }
 
-.gallery__image--day {
+.gallery__image-day {
   max-width: none;
 }
 
@@ -107,17 +107,26 @@ line-height: 24px;
   line-height: 18px;
   text-transform: uppercase;
   color: #d43560;
+  margin-left: 20px;
 }
 
-.gallery__heart--icon-day {
+.gallery__heart-icon-day, .gallery__heart-icon {
   line-height: 26px;
-  margin-right: 13px;
   font-size: 22px;
   font-weight: 700;
   vertical-align: bottom;
   text-decoration: none;
   color: #d43560;
   background-color: transparent;
+}
+
+.gallery__social {
+  display: flex;
+  padding-top: 11px;
+  justify-content: flex-end;
+  align-items: center;
+  background: #f2f2f2;
+  flex-direction: row-reverse;
 }
 
 @media (min-width: @tablet-width) {
@@ -144,7 +153,7 @@ line-height: 24px;
     margin: 0 auto;
     padding: 0 5%;
   }
-  .gallery__item--wrapper {
+  .gallery__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -160,7 +169,7 @@ line-height: 24px;
     width: 300px;
     margin: 0 0 21px;
   }
-  .gallery__image--day {
+  .gallery__image-day {
     display: block;
     width: 100%;
   }
@@ -176,26 +185,37 @@ line-height: 24px;
     max-width: 350px;
   }
   .gallery__text {
-    margin: 0 0 36px;
     font-size: 14px;
     line-height: 24px;
   }
-  .gallery__heart--icon-day {
-    position: absolute;
-    bottom: 19px;
-    right: 19px;
-    display: block;
-    max-width: 20px;
-    max-height: 30px;
-    overflow: hidden;
+  .gallery__heart-icon-day {
+    display: inline-block;
+    vertical-align: middle;
   }
   .gallery__like {
-    position: absolute;
-    bottom: 19px;
-    left: 19px;
     max-width: 150px;
     max-height: 20px;
     overflow: hidden;
+    margin-left: 0;
+  }
+  .gallery__social {
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .gallery__like-day {
+    position: absolute;
+    top: 23px;
+    left: auto;
+    right: 70px;
+  }
+  .gallery__heart-icon-day {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+  .gallery__author-image img {
+    width: 300px;
   }
 }
 
@@ -216,7 +236,7 @@ line-height: 24px;
     font-size: 14px;
     line-height: 24px;
   }
-  .gallery__item--wrapper {
+  .gallery__list {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 10.3%;
