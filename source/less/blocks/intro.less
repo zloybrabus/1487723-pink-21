@@ -3,17 +3,7 @@
   text-align: center;
 }
 
-.intro::before {
-  content: '';
-  display: block;
-  height: 463px;
-  width: 100%;
-  background: url("/img/Grouponemobile.png") no-repeat 40% bottom, url('/img/bg-back-mobile@1x.jpg') no-repeat  top;
-  background-size: auto, cover;
-}
-
 .intro__wrapper {
-  padding: 20px;
   text-align: center;
   background: #1D2631;
 }
@@ -24,6 +14,22 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  padding-top: 95px;
+  min-height: 460px;
+  padding: 0 20px;
+  margin: 0;
+  background: url('/img/iphone-hand-mobile@1x.png')50% 220px no-repeat,url('/img/bg-back-mobile@1x.jpg')50% 0 no-repeat;
+  background-size: contain,cover;
+}
+@media (min-resolution: 2dppx) {
+  .intro__slogan {
+    background: url('/img/iphone-hand-mobile@2x.png')10% 270px no-repeat, url('/img/bg-back-mobile@1x.jpg')50% 0 no-repeat;
+    background-size: 260px, cover;
+  }
+}
+
+.intro__wrapper h2 {
+  padding-top: 95px;
 }
 
 .button-main {
@@ -42,14 +48,21 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    background: url('/img/Groupthreetablet.png') no-repeat bottom, url('/img/bg-back-tablet@1x.jpg') no-repeat;
+    background: url('/img/iphone-hand-tablet@1x.png') no-repeat bottom, url('/img/bg-back-tablet@1x.jpg') no-repeat;
     padding-top: 110px;
     background-size: 600px, cover;
     padding: 180px 5% 60px;
   }
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background: url('/img/iphone-hand-tablet@2x.png') no-repeat bottom, url('/img/bg-back-tablet@2x.jpg') no-repeat;
+      background-color: #1d2631;
+      background-size: 600px,cover;
+    }
+  }
 
-  .intro::before {
-    display: none;
+  .intro__wrapper h2 {
+    padding-top: 0;
   }
 
   .intro__wrapper {
@@ -67,6 +80,8 @@
     font-weight: 100;
     line-height: 52px;
     color: #fff;
+    min-height: unset;
+    background: transparent;
   }
 
   .button-main {
@@ -80,9 +95,32 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    background: url("/img/Groupfivedesktop.png") no-repeat center bottom, url("/img/bg-back-desktop@1x.jpg") no-repeat center;
-    background-color: #1d2631;
-    background-size: 1050px, cover;
+    min-height: 855px;
+    padding: 0 10%;
+    background: url('/img/iphone-hand-desktop@1x.png')75% 100% no-repeat,url(/img/bg-back-desktop@1x.jpg)50% 50% no-repeat;
+    font-size: 50px;
+    margin-top: -110px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background: url('/img/iphone-hand-desktop@2x.png')75% 100% no-repeat, url('/img/bg-back-desktop@2x.jpg') no-repeat center;
+      background-color: #1d2631;
+      background-size: 1050px,cover;
+    }
+  }
+
+  .intro__slogan {
+    padding: 0;
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .intro__wrapper h2 {
+    padding-top: 220px;
   }
 
   .button-main {

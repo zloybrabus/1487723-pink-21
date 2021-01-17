@@ -17,6 +17,10 @@
   height: auto;
 }
 
+.page-header__logo-desktop, .page-header__logo-tablet {
+  display: none;
+}
+
 .main-menu {
   margin-bottom: -66px;
 }
@@ -107,10 +111,16 @@
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    position: absolute;
     top: 27px;
-    left: 40px;
   }
+  .page-header__logo-tablet {
+    display: block;
+    padding-left: 20px;
+  }
+  .page-header__logo-desktop, .page-header__logo-mobile {
+    display: none;
+  }
+  
   .page-header__wrap {
     height: 110px;
   }
@@ -136,8 +146,8 @@
 
 @media (min-width: @desktop-width) {
     .page-header {
-        min-height: 110px;
-        background-color: rgba(0,0,0,.3);
+      min-height: 110px;
+      background-color: rgba(0,0,0,.3);
     }
     .page-header__wrap {
       height: 0;
@@ -149,6 +159,12 @@
   }
     .page-header__logo {
       left: 130px;
+  }
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
   }
   .main-menu__list {
     height: unset;
