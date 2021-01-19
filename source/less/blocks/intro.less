@@ -18,12 +18,12 @@
   min-height: 460px;
   padding: 0 20px;
   margin: 0;
-  background: url('/img/iphone-hand-mobile@1x.png')50% 220px no-repeat,url('/img/bg-back-mobile@1x.jpg')50% 0 no-repeat;
+  background: url('../img/iphone-hand-mobile@1x.png')50% 220px no-repeat,url('../img/bg-back-mobile@1x.jpg')50% 0 no-repeat;
   background-size: contain,cover;
 }
 @media (min-resolution: 2dppx) {
   .intro__slogan {
-    background: url('/img/iphone-hand-mobile@2x.png')10% 270px no-repeat, url('/img/bg-back-mobile@1x.jpg')50% 0 no-repeat;
+    background: url('../img/iphone-hand-mobile@2x.png')10% 270px no-repeat, url('../img/bg-back-mobile@1x.jpg')50% 0 no-repeat;
     background-size: 260px, cover;
   }
 }
@@ -46,16 +46,30 @@
   border-radius: 29px;
 }
 
+.button-main:hover {
+  background: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 7px rgba(1, 1, 1, 0.75);
+  border-radius: 30px;
+  color: #D22856;
+}
+
+.button-main:active {
+  color: #D22856;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .intro {
-    background: url('/img/iphone-hand-tablet@1x.png') no-repeat bottom, url('/img/bg-back-tablet@1x.jpg') no-repeat;
+    background: url('../img/iphone-hand-tablet@1x.png') no-repeat bottom, url('../img/bg-back-tablet@1x.jpg') no-repeat;
     padding-top: 110px;
     background-size: 600px, cover;
     padding: 180px 5% 60px;
   }
   @media (min-resolution: 2dppx) {
     .intro {
-      background: url('/img/iphone-hand-tablet@2x.png') no-repeat bottom, url('/img/bg-back-tablet@2x.jpg') no-repeat;
+      background: url('../img/iphone-hand-tablet@2x.png') no-repeat bottom, url('../img/bg-back-tablet@2x.jpg') no-repeat;
       background-color: #1d2631;
       background-size: 600px,cover;
     }
@@ -97,14 +111,14 @@
   .intro {
     min-height: 855px;
     padding: 0 10%;
-    background: url('/img/iphone-hand-desktop@1x.png')75% 100% no-repeat,url(/img/bg-back-desktop@1x.jpg)50% 50% no-repeat;
+    background: url('../img/iphone-hand-desktop@1x.png')75% 100% no-repeat,url(../img/bg-back-desktop@1x.jpg)50% 50% no-repeat;
     font-size: 50px;
     margin-top: -110px;
   }
 
   @media (min-resolution: 2dppx) {
     .intro {
-      background: url('/img/iphone-hand-desktop@2x.png')75% 100% no-repeat, url('/img/bg-back-desktop@2x.jpg') no-repeat center;
+      background: url('../img/iphone-hand-desktop@2x.png')75% 100% no-repeat, url('../img/bg-back-desktop@2x.jpg') no-repeat center;
       background-color: #1d2631;
       background-size: 1050px,cover;
     }

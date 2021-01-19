@@ -48,19 +48,19 @@ input[type=checkbox], input[type=radio] {
 .upload label[for=upload-filter-one] {
   width: 44px;
   height: 44px;
-  background: url('/img/crop.svg') no-repeat center;
+  background: url('../img/crop.svg') no-repeat center;
 }
 
 .upload label[for=upload-filter-two] {
   width: 48px;
   height: 48px;
-  background: url('/img/fill.svg') no-repeat center;
+  background: url('../img/fill.svg') no-repeat center;
 }
 
 .upload label[for=upload-filter-three] {
   width: 32px;
   height: 32px;
-  background: url('/img/contrast.svg') no-repeat center;
+  background: url('../img/contrast.svg') no-repeat center;
 }
 
 .upload__range-controls {
@@ -116,10 +116,30 @@ input {
   border: 3px solid #d22856;
 }
 
+.upload__button--submit:hover {
+  background: #D22856;
+  color: #FFFFFF;
+}
+
+.upload__button--submit:active {
+  background: #D22856;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .upload__button--reset {
   color: #b5b9be;
   border: 3px solid #b5b9be;
   opacity: .6;
+}
+
+.upload__button--reset:hover {
+  opacity: 0.3;
+}
+
+.upload__button--reset:active {
+  background: #283645;
+  opacity: 0.3;
 }
 
 .upload__range-filter-toggle {
@@ -134,6 +154,10 @@ input {
   background: #f2f2f2;
   z-index: 10;
   cursor: pointer;
+}
+
+.upload__range-filter-toggle:active {
+  background: #D22856;
 }
 
 @media (min-width: @tablet-width) {
@@ -184,13 +208,13 @@ input {
     background: gray;
   }
   .upload__range-controls__wrapper-one::before {
-    background: url('/img/croptablet.svg') no-repeat center;
+    background: url('../img/croptablet.svg') no-repeat center;
   }
   .upload__range-controls__wrapper-two::before {
-    background: url('/img/filltablet.svg') no-repeat center;
+    background: url('../img/filltablet.svg') no-repeat center;
   }
   .upload__range-controls__wrapper-three::before {
-    background: url('/img/contrasttablet.svg') no-repeat center;
+    background: url('../img/contrasttablet.svg') no-repeat center;
   }
   .upload__button-wrapper {
     margin: 0 2px 0 auto;
@@ -218,21 +242,21 @@ input {
     left: 0;
     width: 44px;
     height: 44px;
-    background: url('/img/croptablet.svg') no-repeat center;
+    background: url('../img/crop.svg') no-repeat center;
   }
   .upload__range-controls__wrapper-two::before {
     top: -10px;
     left: 0;
     width: 48px;
     height: 48px;
-    background: url('/img/filltablet.svg') no-repeat center;
+    background: url('../img/fill.svg') no-repeat center;
   }
   .upload__range-controls__wrapper-three::before {
     top: -7px;
     left: 4px;
     width: 36px;
     height: 36px;
-    background: url('/img/contrasttablet.svg') no-repeat center;
+    background: url('../img/contrast.svg') no-repeat center;
   }
   .upload__range-filter {
     width: 288px;

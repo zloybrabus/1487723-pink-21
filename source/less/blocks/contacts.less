@@ -49,9 +49,39 @@
   margin: 0;
 }
 
-.map__contacts-image {
+.contacts__email:hover {
+  text-decoration-line: underline;
+  color: #283645;
+}
+
+.contacts__email:active {
+  color: #283645;
+  opacity: 0.3;
+  text-decoration-line: unset;
+}
+
+.map iframe {
+  border: none;
   width: 100%;
+  height: 100%;
+}
+
+.map {
+  margin: 0 auto;
+  position: relative;
   height: 200px;
+}
+
+.map::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 123px;
+  top: 0;
+  background-image: url('../img/bg-triangle-white-footer.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
 @media (min-width: @tablet-width) {
@@ -89,9 +119,8 @@
     margin: 0 auto 40px;
     padding: 0;
   }
-
-  .map__contacts-image {
-    max-height: 500px;
+  .map {
+    height: 384px;
   }
 }
 
@@ -121,8 +150,7 @@
     width: 33%;
     margin: 0 auto;
   }
-
   .map {
-    max-height: 550px;
+    height: 502px;
   }
 }
