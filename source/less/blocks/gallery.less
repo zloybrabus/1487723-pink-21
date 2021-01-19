@@ -1,7 +1,7 @@
 .gallery {
   padding: 40px 0 22px;
   background: #fff;
-  font-family: opensans,Arial,sans-serif;
+  font-family: "Open sans", "Arial", "sans-serif";
   text-align: center;
 }
 
@@ -79,12 +79,15 @@
 }
 
 .gallery__author-image-day img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .gallery__author-name {
+color: #283645;
 font-size: 14px;
 line-height: 24px;
+font-weight: bold;
 }
 
 .gallery__author-time {
@@ -111,13 +114,14 @@ line-height: 24px;
 }
 
 .gallery__heart-icon-day, .gallery__heart-icon {
-  line-height: 26px;
-  font-size: 22px;
-  font-weight: 700;
-  vertical-align: bottom;
+  fill: #d22856;
+  vertical-align: middle;
+  padding: 0;
   text-decoration: none;
-  color: #d43560;
-  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  background: 0 0;
+  outline: none;
 }
 
 .gallery__social {
@@ -149,7 +153,7 @@ line-height: 24px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 816px;
+    max-width: 620px;
     margin: 0 auto;
     padding: 0 5%;
   }
@@ -158,7 +162,7 @@ line-height: 24px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 816px;
+    max-width: 620px;
     margin: 0 auto;
     padding: 0 5%;
   }
@@ -172,6 +176,7 @@ line-height: 24px;
   .gallery__image-day {
     display: block;
     width: 100%;
+    margin-bottom: 0;
   }
   .gallery__author-info {
     position: relative;
@@ -230,15 +235,19 @@ line-height: 24px;
   }
   .gallery__author-info-day {
     width: 100%;
-    max-width: 1170px;
+    max-width: 940px;
   }
   .gallery__text {
     font-size: 14px;
     line-height: 24px;
   }
   .gallery__list {
-    max-width: 1170px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0 10.3%;
+  }
+  .gallery__author-image-day img {
+    width: 100%;
+    max-height: 506px;
   }
 }

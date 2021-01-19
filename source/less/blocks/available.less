@@ -1,34 +1,59 @@
+.available {
+  background: #1D2631;
+  padding: 20px;
+  text-align: center;
+}
+
 .available__list {
   margin: 0;
   padding: 0;
   font-size: 0;
   list-style: none;
-  margin-top: 40px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .available__list li {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: baseline;
   margin: 0 15px;
 }
 
+.available__item-app {
+  width: 50px;
+  height: 60px;
+  text-decoration: none;
+}
+
 .available__copypast {
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: 300;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
+  font-weight: 100;
   line-height: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 38px;
-  margin-top: 31px;
+  color: #fff;
 }
 
 @media (min-width: @tablet-width) {
+  .available {
+    background: transparent;
+    padding: 0;
+  }
   .available__copypast {
     width: 300px;
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .available {
+    width: 300px;
+    bottom: 120px;
+    left: 10%;
+    padding-top: 51px;
   }
 }
