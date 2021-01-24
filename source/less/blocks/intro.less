@@ -13,9 +13,8 @@
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
-  min-height: 460px;
-  padding: 95px 20px;
+  line-height: 29px;
+  min-height: 367px;
   margin: 0;
   background: url("../img/iphone-hand-mobile@1x.png") 50% 220px no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
   background-size: contain, cover;
@@ -29,21 +28,24 @@
 }
 
 .intro__wrapper h2 {
-  padding-top: 95px;
+  padding-top: 90px;
 }
 
 .button-main {
-  width: 280px;
-  padding: 20px 30px;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  background: transparent;
-  color: #ffffff;
-  border: 3px solid #ffffff;
+  display: block;
   box-sizing: border-box;
-  border-radius: 29px;
+  margin: 10px auto 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  max-width: 280px;
+  padding: 16px 38px 16px 37px;
+  border: 3px solid #fff;
+  line-height: 1;
+  color: #ffffff;
 }
 
 .button-main:hover {
@@ -63,15 +65,15 @@
 @media (min-width: @tablet-width) {
   .intro {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    background-size: 600px, cover;
-    padding: 290px 5% 60px;
+    background-size: 700px, cover;
+    padding: 190px 5% 90px;
   }
 
   @media (min-resolution: 2dppx) {
     .intro {
       background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom, url("../img/bg-back-tablet@2x.jpg") no-repeat;
       background-color: #1d2631;
-      background-size: 600px, cover;
+      background-size: 700px, cover;
     }
   }
 
@@ -89,10 +91,10 @@
   .intro__slogan {
     display: block;
     max-width: 200px;
-    margin: 0 auto 35px;
+    margin: 15px 0 30px 35px;
     font-size: 40px;
-    font-weight: 100;
-    line-height: 52px;
+    font-weight: 300;
+    line-height: 48px;
     color: #ffffff;
     min-height: unset;
     background: transparent;
@@ -100,10 +102,10 @@
 
   .button-main {
     width: 300px;
-    padding: 21px 49px 21px 48px;
+    padding: 16px 30px 16px 31px;
     border: 3px solid #ffffff;
     line-height: 1;
-    margin: 0 auto 20px;
+    margin: 0 0 20px;
   }
 }
 
@@ -137,8 +139,11 @@
     padding-top: 220px;
   }
 
+  .intro__wrapper {
+    margin: 0;
+  }
+  
   .button-main {
-    font-size: 21px;
-    padding: 20px 32px 20px 31px;
+    margin: 0 20px 20px;
   }
 }

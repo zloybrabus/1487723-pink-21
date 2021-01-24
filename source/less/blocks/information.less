@@ -1,5 +1,5 @@
 .information__title-wrap {
-  padding-top: 40px;
+  padding-top: 35px;
   margin-bottom: 0;
   background-color: #ffffff;
   font-size: 24px;
@@ -26,6 +26,7 @@
   list-style: none;
   color: #000000;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .information__item-container {
@@ -34,14 +35,14 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   margin-bottom: 0;
-  padding: 130px 0 0;
+  padding: 26px 0 0;
   text-align: center;
   background-clip: border-box;
 }
 
 .information__item {
   max-width: 275px;
-  margin: 0 auto 30px;
+  margin: 0 auto 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -53,9 +54,17 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 14px;
   padding-top: 43px;
   margin: 0;
+}
+
+.information__title--two {
+  padding-top: 30px;
+}
+
+.information__title--three {
+  padding-top: 30px;
 }
 
 .information__description {
@@ -71,7 +80,7 @@
   .information__item-container::after {
     content: "";
     display: block;
-    height: 330px;
+    height: 300px;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 50px;
   }
 
@@ -79,7 +88,7 @@
     .information__item-container::after {
       content: "";
       display: block;
-      height: 330px;
+      height: 300px;
       background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 50px;
       background-size: contain;
     }
@@ -89,7 +98,7 @@
 @media (min-width: @tablet-width) {
   .information__title-wrap {
     padding: 0 0 30px;
-    margin-top: 50px;
+    margin-top: 58px;
     font-size: 40px;
     line-height: 48px;
   }
@@ -103,7 +112,7 @@
 
   .information__item-container {
     margin: 0;
-    padding-top: 80px;
+    padding-top: 75px;
     padding-bottom: 0;
   }
 
@@ -119,11 +128,19 @@
     margin-left: 50%;
   }
 
+  .information__item--screen-two {
+    margin-top: 35px;
+  }
+
+  .information__item--screen-three {
+    margin-top: 35px;
+  }
+
   .information__title {
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     padding: 0;
     text-align: left;
   }
@@ -148,7 +165,7 @@
     bottom: 0;
     margin: 0 auto;
     width: 300px;
-    height: 530px;
+    height: 520px;
     background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat center 50px;
   }
 
@@ -251,7 +268,6 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    padding-top: 59px;
     padding-bottom: 35px;
     margin: 0;
   }
