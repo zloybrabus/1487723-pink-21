@@ -1,6 +1,6 @@
 .information__title-wrap {
-  padding-top: 35px;
-  margin-bottom: 0;
+  padding-top: 55px;
+  margin: 0 auto;
   background-color: #ffffff;
   font-size: 24px;
   line-height: 30px;
@@ -26,11 +26,13 @@
   list-style: none;
   color: #000000;
   padding: 0;
-  margin-bottom: 0;
+  margin: 10px auto 18px;
 }
 
 .information__item-container {
   position: relative;
+  min-width: 320px;
+  max-width: 660px;
   background: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -81,7 +83,7 @@
     content: "";
     display: block;
     height: 300px;
-    background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 50px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 30px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -89,7 +91,7 @@
       content: "";
       display: block;
       height: 300px;
-      background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 50px;
+      background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 30px;
       background-size: contain;
     }
   }
@@ -97,8 +99,9 @@
 
 @media (min-width: @tablet-width) {
   .information__title-wrap {
-    padding: 0 0 30px;
-    margin-top: 58px;
+    min-width: 660px;
+    max-width: 940px;
+    padding: 90px 0 30px;
     font-size: 40px;
     line-height: 48px;
   }
@@ -111,7 +114,9 @@
   }
 
   .information__item-container {
-    margin: 0;
+    min-width: 660px;
+    max-width: 940px;
+    margin: 0 auto;
     padding-top: 75px;
     padding-bottom: 0;
   }
@@ -125,6 +130,7 @@
 
   .information__item {
     text-align: left;
+    width: 310px;
     margin-left: 50%;
   }
 
@@ -140,7 +146,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     padding: 0;
     text-align: left;
   }
@@ -208,6 +214,10 @@
 
   .information__item-container {
     padding: 0 120px 0;
+  }
+
+  .information__title-wrap {
+    padding: 65px 0 30px;
   }
 
   .information__item {
