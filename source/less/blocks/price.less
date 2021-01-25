@@ -6,8 +6,7 @@
 
 .price__wrapper {
   overflow: hidden;
-  min-width: 320px;
-  max-width: 660px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 70px 0 20px;
 }
@@ -18,14 +17,11 @@
   margin: 0 auto;
   border-collapse: collapse;
   word-break: break-all;
-  transform: translateX(-33.3%);
+  transform: translateX(-255px);
 }
 
-.price-table td,
-.price-table th {
-  box-sizing: border-box;
-  min-width: 277px;
-  padding: 15px 39px;
+.price-table td {
+  padding: 17px 16px 8px;
 }
 
 .price-table__title {
@@ -36,6 +32,9 @@
   text-transform: uppercase;
   background: #283645;
   border: 2px solid #e5e5e5;
+  padding: 13px 0 22px;
+  box-sizing: border-box;
+  min-width: 277px;
 }
 
 .price-table__hidden-cell {
@@ -142,8 +141,7 @@
   }
 
   .price__wrapper {
-    min-width: 660px;
-    max-width: 940px;
+    max-width: 660px;
   }
 
   .price {
@@ -218,5 +216,9 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .price__wrapper {
+    max-width: 940px;
   }
 }

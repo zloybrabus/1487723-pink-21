@@ -1,13 +1,14 @@
 .intro {
   padding-top: 0;
   text-align: center;
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
 }
 
 .intro__wrapper {
   text-align: center;
-  min-width: 320px;
-  max-width: 660px;
-  background: #1d2631;
+  margin: 0 auto;
+  // background: #1d2631;
+  padding-bottom: 15px;
 }
 
 .intro__slogan {
@@ -18,27 +19,29 @@
   line-height: 29px;
   min-height: 367px;
   margin: 0;
-  background: url("../img/iphone-hand-mobile@1x.png") 50% 220px no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
-  background-size: contain, cover;
+  padding-top: 90px;
+  // background: url("../img/iphone-hand-mobile@1x.png") 50% 220px no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  // background-size: contain, cover;
+  background: url("../img/iphone-hand-mobile@1x.png") 0 bottom no-repeat;
 }
 
 @media (min-resolution: 2dppx) {
   .intro__slogan {
-    background: url("../img/iphone-hand-mobile@2x.png") 5% 170px no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+    // background: url("../img/iphone-hand-mobile@2x.png") 5% 170px no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
     background-size: 260px, cover;
   }
 }
 
 @media (min-width: @tablet-width) {
   .intro {
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background: url(../img/iphone-hand-tablet@2x.png) no-repeat 208px bottom,url(../img/bg-back-tablet@2x.jpg) no-repeat;
     background-size: 700px, cover;
     padding: 0;
   }
 
   @media (min-resolution: 2dppx) {
     .intro {
-      background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom, url("../img/bg-back-tablet@2x.jpg") no-repeat;
+      background: url(../img/iphone-hand-tablet@2x.png) no-repeat 208px bottom,url(../img/bg-back-tablet@2x.jpg) no-repeat;
       background-color: #1d2631;
       background-size: 670px, cover;
     }
@@ -61,6 +64,7 @@
     color: #ffffff;
     min-height: unset;
     background: transparent;
+    padding-top: 0;
   }
 }
 
