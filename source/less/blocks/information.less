@@ -32,7 +32,6 @@
 .information__item-container {
   position: relative;
   min-width: 320px;
-  max-width: 660px;
   background: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -99,9 +98,8 @@
 
 @media (min-width: @tablet-width) {
   .information__title-wrap {
-    min-width: 660px;
-    max-width: 940px;
-    padding: 90px 0 30px;
+    max-width: 660px;
+    padding: 50px 0 0;
     font-size: 40px;
     line-height: 48px;
   }
@@ -114,23 +112,24 @@
   }
 
   .information__item-container {
-    min-width: 660px;
-    max-width: 940px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 100px;
     padding-bottom: 0;
+    background-position-y: -17px;
   }
 
   .information__list {
+    max-width: 660px;
+    margin: 0 auto;
     text-align: left;
     position: relative;
     padding-bottom: 10px;
-    margin: 0;
   }
 
   .information__item {
     text-align: left;
     width: 310px;
+    max-width: unset;
     margin-left: 50%;
   }
 
@@ -213,10 +212,12 @@
   }
 
   .information__item-container {
+    max-width: 940px;
     padding: 0 120px 0;
   }
 
   .information__title-wrap {
+    max-width: 940px;
     padding: 65px 0 30px;
   }
 

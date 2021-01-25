@@ -29,46 +29,11 @@
   }
 }
 
-.intro__wrapper h2 {
-  padding-top: 90px;
-}
-
-.button-main {
-  display: block;
-  box-sizing: border-box;
-  margin: 10px auto 20px;
-  padding: 10px;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  max-width: 280px;
-  padding: 16px 38px 16px 37px;
-  border: 3px solid #fff;
-  line-height: 1;
-  color: #ffffff;
-}
-
-.button-main:hover {
-  background: #ffffff;
-  border: 3px solid #ffffff;
-  box-sizing: border-box;
-  box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
-  border-radius: 30px;
-  color: #d22856;
-}
-
-.button-main:active {
-  color: #d22856;
-  opacity: 0.3;
-}
-
 @media (min-width: @tablet-width) {
   .intro {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-size: 700px, cover;
-    padding: 190px 5% 90px;
+    padding: 0;
   }
 
   @media (min-resolution: 2dppx) {
@@ -79,14 +44,9 @@
     }
   }
 
-  .intro__wrapper h2 {
-    padding-top: 0;
-  }
-
   .intro__wrapper {
-    padding: 0;
-    min-width: 660px;
-    max-width: 940px;
+    padding: 190px 0 110px;
+    max-width: 660px;
     margin: 0 auto;
     background-color: transparent;
   }
@@ -94,7 +54,7 @@
   .intro__slogan {
     display: block;
     max-width: 200px;
-    margin: 15px 0 30px 35px;
+    margin: 15px 0 28px 68px;
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
@@ -102,23 +62,14 @@
     min-height: unset;
     background: transparent;
   }
-
-  .button-main {
-    width: 300px;
-    padding: 16px 30px 16px 31px;
-    border: 3px solid #ffffff;
-    line-height: 1;
-    margin: 0 0 20px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
     min-height: 855px;
-    padding: 0 10%;
+    padding: 0;
     background: url("../img/iphone-hand-desktop@1x.png") 75% 100% no-repeat, url("../img/bg-back-desktop@1x.jpg") 50% 50% no-repeat;
     font-size: 50px;
-    margin-top: -114px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -135,22 +86,13 @@
     line-height: 68px;
     max-width: 300px;
     text-align: center;
-    margin: 0 10px;
-  }
-
-  .intro__wrapper h2 {
-    padding-top: 220px;
+    margin: 0;
   }
 
   .intro__wrapper {
-    margin: 0;
-  }
-  
-  .button-main {
-    margin: 0 20px 20px;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 18px;
-    padding: 16px 27px 16px 29px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 210px;
   }
 }
+
