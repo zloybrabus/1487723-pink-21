@@ -3,6 +3,8 @@
   background: #ffffff;
   font-family: "Open sans", "Arial", sans-serif;
   text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .gallery__list {
@@ -33,7 +35,7 @@
 
 .gallery__item {
   width: 280px;
-  margin: 0 auto 21px;
+  margin: 0 auto 22px;
 }
 
 .gallery__image-day {
@@ -46,11 +48,12 @@
 }
 
 .gallery__info {
-  width: 280px;
-  margin: 5px auto 50px;
+  width: 250px;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  padding-bottom: 85px;
 }
 
 .gallery__author-image-day {
@@ -136,12 +139,19 @@
 
 @media (min-width: @tablet-width) {
   .gallery {
+    max-width: 660px;
+    margin: 0 auto;
     padding-bottom: 10px;
   }
 
+  .gallery__author-image-day::before  {
+    top: 58px;
+    right: 3%;
+}
+
   .gallery__info {
     width: 440px;
-    margin: 50px auto 78px;
+    margin: 50px auto 23px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -169,7 +179,6 @@
     flex-wrap: wrap;
     max-width: 620px;
     margin: 0 auto;
-    padding: 0 5%;
   }
 
   .gallery__item {

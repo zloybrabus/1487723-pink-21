@@ -5,25 +5,26 @@
 @media (min-width: @tablet-width) {
   .diagramm {
     display: block;
-    padding: 55px 7% 40px;
+    padding: 55px 7% 20px;
     background-color: #ffffff;
   }
 
   .diagramm__item {
     max-width: 300px;
     position: relative;
-    margin: 50px 0 50px 50%;
+    padding: 40px 0 50px 50%;
+    margin-bottom: 20px;
   }
 
   .diagramm__item::before {
     content: "";
     display: block;
     position: absolute;
-    left: -305px;
-    top: -40px;
+    left: 18px;
+    top: -2px;
     width: 242px;
     height: 280px;
-    background: url("../img/timer.svg") no-repeat center;
+    background: url(../img/timer.svg) no-repeat center;
     background-size: cover;
   }
 
@@ -31,8 +32,8 @@
     content: "24";
     display: block;
     position: absolute;
-    left: -288px;
-    top: 17px;
+    left: 36px;
+    top: 53px;
     width: 205px;
     height: 205px;
     text-align: center;
@@ -40,7 +41,7 @@
     font-weight: 700;
     line-height: 200px;
     color: #d22856;
-    background: url("../img/diagram-fill.svg") no-repeat center;
+    background: url(../img/diagram-fill.svg) no-repeat center;
     background-size: contain;
   }
 
@@ -51,7 +52,8 @@
     line-height: 36px;
     align-items: center;
     color: #000000;
-    margin-bottom: 15px;
+    width: 200px;
+    margin: 0;
   }
 
   .diagramm__text {
@@ -61,6 +63,8 @@
     line-height: 24px;
     align-items: center;
     color: #283645;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .diagramm__information {
@@ -74,8 +78,7 @@
   }
 
   .diagramm__wrapper {
-      min-width: 660px;
-      max-width: 940px;
+      max-width: 660px;
   }
 }
 
@@ -87,6 +90,7 @@
   }
 
   .diagramm__wrapper {
+    max-width: 940px;
     margin: 0 auto;
   }
 
