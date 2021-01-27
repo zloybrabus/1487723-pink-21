@@ -2,8 +2,10 @@
   position: relative;
   display: block;
   width: 280px;
-  margin: 50px auto 47px;
-  padding: 0;
+}
+
+.send__desktop-only {
+  display: none;
 }
 
 .send__title {
@@ -12,7 +14,8 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  color: #de6183;
+  color: #d22856;
+  padding-top: 31px;
 }
 
 .send__input {
@@ -20,7 +23,7 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 197px;
+  height: 201px;
   padding: 15px 20px;
   border: 2px solid #e7e7e7;
   border-radius: 2px;
@@ -30,6 +33,7 @@
   line-height: 30px;
   resize: none;
   outline: none;
+  letter-spacing: 0.5px;
 }
 
 .send__input:hover {
@@ -38,58 +42,60 @@
 }
 
 .send__input:active {
-  border: 2px solid #D22856;
+  border: 2px solid #d22856;
   border-radius: 1px;
 }
 
-.form__necessarily {
-  display: block;
-  max-width: 280px;
-  margin: 0 auto;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.button-wrapper__send-button {
+.send__button-wrapper {
   width: 280px;
-  margin-top: 20px;
-  padding: 18px 0;
+  margin-top: 48px;
+  padding: 17px 0;
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: #ffffff;
   background-color: #2aab6d;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  font-family: "Open sans", "Arial", sans-serif;
 }
 
-.button-wrapper__send-button:hover {
-  background: #1C9B5E;
-  border: 2px solid #1C9B5E;
+.send__button-wrapper:hover {
+  background: #1c9b5e;
+  border: 2px solid #1c9b5e;
   border-radius: 1px;
 }
 
-.button-wrapper__send-button:active {
-  background: #1C9B5E;
-  border: 2px solid #1C9B5E;
+.send__button-wrapper:active {
+  background: #1c9b5e;
+  border: 2px solid #1c9b5e;
   border-radius: 1px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.3;
 }
 
-.button-wrapper__send-button:disabled {
-  background: #E5E5E5;
-  border: 2px solid #E5E5E5;
+.send__button-wrapper:disabled {
+  background: #e5e5e5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
+}
+
+.send__form-necessarily {
+  margin-top: 33px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .send {
     order: 4;
     width: auto;
-    margin: 0 0 40px;
-    padding: 40px 9.3%;
+    padding-top: 19px;
+    padding-bottom: 51px;
+    padding-left: 58px;
+    padding-right: 58px;
     border: 2px solid #e5e5e5;
   }
 
@@ -99,39 +105,66 @@
     text-align: center;
   }
 
-  .button-wrapper {
+  .send__button {
     margin: 0;
     order: 5;
+    padding-bottom: 45px;
   }
 
-  .button-wrapper__send-button {
+  .send__button-wrapper {
     float: left;
     width: 300px;
-    margin: 0;
+    margin: 0 0 0 20px;
   }
 
-  .button-wrapper__form-necessarily {
+  .send__form-necessarily {
     float: right;
-    margin-top: 15px;
+    margin-top: 17px;
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .send__input {
+    height: 193px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .send {
     width: 100%;
-    margin-bottom: 65px;
-    padding: 30px 6.1% 44px;
+    padding-top: 16px;
+    padding-bottom: 45px;
+    padding-left: 58px;
+    padding-right: 57px;
   }
 
-  .button-wrapper {
+  .send__desktop-only {
+    display: inline;
+  }
+
+  .send__button {
     width: 100%;
+    padding-bottom: 0;
   }
 
-  .button-wrapper__form-necessarily {
+  .send__input {
+    width: 820px;
+    height: 127px;
+  }
+
+  .send__form-necessarily {
     display: block;
     max-width: 400px;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
+    margin-right: 0;
+  }
+
+  .send__button-wrapper {
+    margin-bottom: -25px;
+    margin-left: 0;
   }
 }

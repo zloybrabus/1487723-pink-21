@@ -1,8 +1,14 @@
 .gallery {
-  padding: 40px 0 22px;
-  background: #fff;
-  font-family: "Open sans", "Arial", "sans-serif";
+  padding: 45px 0 22px;
+  background: #ffffff;
+  font-family: "Open sans", "Arial", sans-serif;
   text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.gallery__br {
+  displai: inline;
 }
 
 .gallery__list {
@@ -17,7 +23,10 @@
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
-  padding: 19px;
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+  padding-left: 17px;
   text-align: left;
   background-color: #f2f2f2;
 }
@@ -26,7 +35,7 @@
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
-  padding: 19px;
+  padding: 17px 16px 18px;
   text-align: left;
   background-color: #f2f2f2;
 }
@@ -46,11 +55,13 @@
 }
 
 .gallery__info {
-  width: 280px;
-  margin: 5px auto 50px;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 49px;
 }
 
 .gallery__author-image-day {
@@ -67,33 +78,34 @@
 .gallery__author-image-day::before {
   position: absolute;
   top: 0;
-  right: 4%;
-  content: 'панорама дня';
+  right: 6%;
+  content: "панорама дня";
   width: 140px;
   height: 36px;
   font-size: 12px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #d22856;
 }
 
 .gallery__author-image-day img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .gallery__author-name {
-color: #283645;
-font-size: 14px;
-line-height: 24px;
-font-weight: bold;
+  color: #283645;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .gallery__author-time {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
+  font-weight: normal;
   color: #79818a;
   margin: 0;
 }
@@ -113,7 +125,8 @@ font-weight: bold;
   margin-left: 20px;
 }
 
-.gallery__heart-icon-day, .gallery__heart-icon {
+.gallery__heart-icon-day,
+.gallery__heart-icon {
   fill: #d22856;
   vertical-align: middle;
   padding: 0;
@@ -126,7 +139,7 @@ font-weight: bold;
 
 .gallery__social {
   display: flex;
-  padding-top: 11px;
+  padding-top: 5px;
   justify-content: flex-end;
   align-items: center;
   background: #f2f2f2;
@@ -135,28 +148,44 @@ font-weight: bold;
 
 @media (min-width: @tablet-width) {
   .gallery {
-    padding-bottom: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 42px;
+    padding-bottom: 38px;
   }
+
+  .gallery__br {
+    display: none;
+  }
+
+  .gallery__author-image-day::before {
+    top: 58px;
+    right: 3%;
+  }
+
   .gallery__info {
-    width: 440px;
-    margin: 50px auto 78px;
+    margin: 50px auto 27px;
+    padding-left: 85px;
+    padding-right: 85px;
     font-size: 18px;
     line-height: 30px;
   }
+
   .gallery__author-info-day {
     position: relative;
-    max-width: 816px;
+    max-width: 620px;
     margin: 0 auto 50px;
+    padding: 22px 30px 20px;
   }
+
   .gallery__author-info-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 620px;
     margin: 0 auto;
-    padding: 0 5%;
   }
+
   .gallery__list {
     display: flex;
     flex-direction: row;
@@ -164,8 +193,8 @@ font-weight: bold;
     flex-wrap: wrap;
     max-width: 620px;
     margin: 0 auto;
-    padding: 0 5%;
   }
+
   .gallery__item {
     display: flex;
     flex-direction: column;
@@ -173,81 +202,144 @@ font-weight: bold;
     width: 300px;
     margin: 0 0 21px;
   }
+
   .gallery__image-day {
-    display: block;
     width: 100%;
     margin-bottom: 0;
   }
+
   .gallery__author-info {
     position: relative;
     flex-grow: 1;
     width: 100%;
     max-width: none;
     margin: 0 auto;
-    padding: 19px;
+    padding: 23px 30px;
   }
+
   .gallery__author-name {
     max-width: 350px;
   }
+
   .gallery__text {
+    min-height: 48px;
     font-size: 14px;
     line-height: 24px;
   }
+
   .gallery__heart-icon-day {
     display: inline-block;
     vertical-align: middle;
   }
+
   .gallery__like {
     max-width: 150px;
     max-height: 20px;
     overflow: hidden;
     margin-left: 0;
   }
+
+  .gallery__like--day {
+    margin-right: 16px;
+  }
+
   .gallery__social {
     margin-top: auto;
     flex-direction: row;
     justify-content: space-between;
   }
-  .gallery__like-day {
+
+  .gallery__social-day {
     position: absolute;
-    top: 23px;
+    top: 20px;
     left: auto;
-    right: 70px;
+    right: 30px;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .gallery__heart-icon-day {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-  }
+
   .gallery__author-image img {
     width: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .gallery {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-top: 49px;
+  }
+
   .gallery__info {
     width: 572px;
+    margin: 42px auto 37px;
+    padding-bottom: 52px;
   }
+
   .gallery__author-info-wrapper {
-    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 10.3%;
   }
+
   .gallery__author-info-day {
-    width: 100%;
     max-width: 940px;
+    width: 940px;
+    margin: 0;
+    padding: 23px 26px;
   }
+
+  .gallery__author-info {
+    padding: 25px 28px 22px;
+  }
+
   .gallery__text {
     font-size: 14px;
     line-height: 24px;
+    min-height: unset;
+    margin: 0 0 1px;
   }
+
+  .gallery__social {
+    padding-top: 10px;
+  }
+
+  .gallery__social-day {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: 31px;
+  }
+
+  .gallery__item {
+    margin: 0 0 54px;
+  }
+
   .gallery__list {
     max-width: 940px;
-    margin: 0 auto;
-    padding: 0 10.3%;
+    margin: 50px auto 0;
   }
-  .gallery__author-image-day img {
+
+  .gallery__text--item {
+    min-height: 48px;
+  }
+
+  .gallery__image-day {
     width: 100%;
-    max-height: 506px;
+    height: auto;
+    margin: 0;
+
+    img {
+      min-height: 506px;
+    }
+  }
+
+  .gallery__author-image-day::before {
+    top: 55px;
+    right: 0;
+  }
+
+  .gallery__author-image {
+    height: 400px;
   }
 }

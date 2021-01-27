@@ -1,18 +1,18 @@
 .app {
-  background: #F2F2F2;
   box-sizing: border-box;
-  padding: 33px 6% 7px;
-  background: #f2f2f2;
+  padding: 7px 6% 7px;
 }
 
 .app__title {
   max-width: 220px;
-  margin: 0 auto 30px;
-  color: #de6183;
+  margin: 0 auto;
+  color: #d22856;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  padding-top: 38px;
+  padding-bottom: 30px;
 }
 
 .app__list {
@@ -45,7 +45,7 @@
   margin-right: 30px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .app__checkbox:hover {
@@ -53,11 +53,11 @@
 }
 
 .app__checkbox:active {
-  border: 2px solid #D22856;
+  border: 2px solid #d22856;
 }
 
-.app__input:checked~.app__checkbox::before {
-  content: '';
+.app__input:checked ~ .app__checkbox::before {
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -78,12 +78,12 @@
 
 @media (min-width: @tablet-width) {
   .app {
-    order: 1;
     position: relative;
-    margin: 40px 0 60px;
-    padding: 33px 9.3%;
+    padding-top: 44px;
+    padding-bottom: 19px;
+    padding-left: 36px;
     border: 2px solid #e5e5e5;
-    background: #fff;
+    background: #ffffff;
   }
 
   .app__title {
@@ -94,19 +94,32 @@
   }
 
   .app__list {
-    margin-left: 0;
+    margin-left: 23px;
+  }
+
+  .app__checkbox {
+    margin-right: 21px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .app {
-    width: 46%;
+    max-width: 431px;
     position: relative;
-    margin: 0 0 54px;
-    padding: 41px 7.9% 20px;
+    margin: 0;
+    padding: 45px 31px 16px 33px;
+  }
+
+  .app__list {
+    margin-left: 39px;
   }
 
   .app__item {
     margin-bottom: 35px;
+  }
+
+  .app__checkbox {
+    min-width: 37px;
+    height: 37px;
   }
 }
