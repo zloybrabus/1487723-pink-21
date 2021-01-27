@@ -3,6 +3,7 @@
   padding: 30px 0 25px;
 }
 
+
 .contact-info__title {
   display: none;
   text-align: center;
@@ -63,7 +64,6 @@
     order: 2;
     position: relative;
     display: block;
-    margin-bottom: 58px;
     padding: 24px 8.6%;
     padding-bottom: 3px;
     border: 2px solid #e6e6e6;
@@ -122,9 +122,7 @@
 @media (min-width: @desktop-width) {
   .contact-info {
     width: 100%;
-    margin-bottom: 52px;
-    margin-top: 49px;
-    padding: 30px 6.1% 17px;
+    padding: 23px 6.2% 12px;
   }
 
   .contact-info__item-container {
@@ -135,7 +133,15 @@
   }
 
   .contact-info__item {
-    width: 45.5%;
+    width: 45.8%;
     margin: 0;
+  }
+
+  .contact-info__input-wrapper--phone-icon::before {
+    width: 61px;
+  }
+
+  .contact-info__input-wrapper--mail-icon::before {
+    width: 61px;
   }
 }

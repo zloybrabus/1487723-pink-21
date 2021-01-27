@@ -4,6 +4,10 @@
   width: 280px;
 }
 
+.send__desktop-only {
+  display: none;
+}
+
 .send__title {
   margin: 0 auto 11px;
   font-size: 14px;
@@ -130,8 +134,14 @@
 @media (min-width: @desktop-width) {
   .send {
     width: 100%;
-    margin-bottom: 65px;
-    padding: 16px 6.1% 45px;
+    padding-top: 16px;
+    padding-bottom: 45px;
+    padding-left: 58px;
+    padding-right: 57px;
+  }
+
+  .send__desktop-only {
+    display: inline;
   }
 
   .send__button {
@@ -140,8 +150,8 @@
   }
 
   .send__input {
-    width: 816px;
-    height: 124px;
+    width: 820px;
+    height: 127px;
   }
 
   .send__form-necessarily {
@@ -150,9 +160,11 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
+    margin-right: 0;
   }
 
   .send__button-wrapper {
     margin-bottom: -25px;
+    margin-left: 0;
   }
 }
