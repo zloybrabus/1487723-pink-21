@@ -45,7 +45,7 @@
     <nav class="main-menu main-menu--closed main-menu--nojs">
 
       <div class="page-header__wrap">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <svg class="page-header__logo-mobile" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px"
             viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve" fill="#ffffff">
@@ -142,120 +142,124 @@
     <form class="form-main" action="https://echo.htmlacademy.ru" method="POST">
 
       <h2 class="form-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-        вашу бонусную карту! <span class="form-main__title--tablet">Пожалуйста, заполните форму ниже:</span></h2>
+        вашу бонусную карту! <div class="form-main__title--tablet">Пожалуйста, заполните форму ниже:</div></h2>
 
-      <fieldset class="draw">
+      <fieldset class="form-main__fieldset draw">
 
         <label class="draw__item">
-          <span class="draw__item-name">Фамилия</span>
-          <span class="draw__input__wrapper">
+          <div class="draw__item-name">Фамилия</div>
+          <div class="draw__input__wrapper">
             <input class="draw__input" type="text" placeholder="Укажите фамилию *" name="name" required>
-          </span>
+          </div>
         </label>
 
         <label class="draw__item">
-          <span class="draw__item-name">Имя</span>
-          <span class="draw__input__wrapper">
+          <div class="draw__item-name">Имя</div>
+          <div class="draw__input__wrapper">
             <input class="draw__input" type="text" placeholder="Введите ваше имя *" name="name" required>
-          </span>
+          </div>
         </label>
 
         <label class="draw__item">
-          <span class="draw__item-name">Отчество</span>
-          <span class="draw__input__wrapper">
+          <div class="draw__item-name">Отчество</div>
+          <div class="draw__input__wrapper">
             <input class="draw__input" type="text" placeholder="Ну и отчество тоже" name="name" required>
-          </span>
+          </div>
         </label>
       </fieldset>
 
-      <fieldset class="achievements">
-        <legend class="achievements__title">Ваши безбашенные<br> достижения в путешествии</legend>
-        <div class="achievements__list">
-          <div class="achievements__list_column">
-            <label class="achievements__item">
-              <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked>
-              <span class="achievements__checkbox"></span>
-              <span class="achievements__text">Сделал селфи с акулой</span>
-            </label>
+      <div class="wrapper wrapper__fieldset wrapper__fieldset-achievements">
+        <fieldset class="form-main__fieldset achievements">
+          <legend class="achievements__title">Ваши безбашенные&nbsp;<br class="achievements__no-br"> достижения в путешествии</legend>
+          <div class="achievements__list">
+            <div class="achievements__list_column">
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="shark" value="Сделал селфи с акулой" checked>
+                <div class="achievements__checkbox"></div>
+                <div class="achievements__text">Сделал селфи с акулой</div>
+              </label>
 
-            <label class="achievements__item">
-              <input class="achievements__input" type="checkbox" name="biatch" value="Обгорел на пляже" checked>
-              <span class="achievements__checkbox"></span>
-              <span class="achievements__text">Обгорел на пляже</span>
-            </label>
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="biatch" value="Обгорел на пляже" checked>
+                <div class="achievements__checkbox"></div>
+                <div class="achievements__text">Обгорел на пляже</div>
+              </label>
+            </div>
+
+            <div class="achievements__list_column">
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="noris" value="Видел Чака Норриса">
+                <div class="achievements__checkbox"></div>
+                <div class="achievements__text">Видел Чака Норриса</div>
+              </label>
+
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="souvenirs" value="Накупил сувениров">
+                <div class="achievements__checkbox"></div>
+                <div class="achievements__text">Накупил сувениров</div>
+              </label>
+            </div>
+
+            <div class="achievements__list_column">
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="tower" value="Удержал башню" checked>
+                <div class="achievements__checkbox"></div>
+                <div class="achievements__text">Удержал башню</div>
+              </label>
+
+              <label class="achievements__item">
+                <input class="achievements__input" type="checkbox" name="hotel" value="Разгромил отель">
+                <div class="achievements__checkbox"></div>
+                <div class="achievements__text">Разгромил отель</div>
+              </label>
+            </div>
           </div>
+        </fieldset>
+      </div>
 
-          <div class="achievements__list_column">
-            <label class="achievements__item">
-              <input class="achievements__input" type="checkbox" name="noris" value="Видел Чака Норриса">
-              <span class="achievements__checkbox"></span>
-              <span class="achievements__text">Видел Чака Норриса</span>
-            </label>
-
-            <label class="achievements__item">
-              <input class="achievements__input" type="checkbox" name="souvenirs" value="Накупил сувениров">
-              <span class="achievements__checkbox"></span>
-              <span class="achievements__text">Накупил сувениров</span>
-            </label>
-          </div>
-
-          <div class="achievements__list_column">
-            <label class="achievements__item">
-              <input class="achievements__input" type="checkbox" name="tower" value="Удержал башню" checked>
-              <span class="achievements__checkbox"></span>
-              <span class="achievements__text">Удержал башню</span>
-            </label>
-
-            <label class="achievements__item">
-              <input class="achievements__input" type="checkbox" name="hotel" value="Разгромил отель">
-              <span class="achievements__checkbox"></span>
-              <span class="achievements__text">Разгромил отель</span>
-            </label>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset class="contact-info">
+      <fieldset class="form-main__fieldset form-main__fieldset--contact-info contact-info">
         <legend class="contact-info__title">Контактная информация</legend>
 
         <div class="contact-info__item-container">
           <label class="contact-info__item">
-            <span class="contact-info__name">Номер телефона</span>
-            <span class="contact-info__input-wrapper contact-info__input-wrapper--phone-icon">
+            <div class="contact-info__name">Номер телефона</div>
+            <div class="contact-info__input-wrapper contact-info__input-wrapper--phone-icon">
               <input class="contact-info__input" type="tel" placeholder="Номер, пожалуйста" name="phone" required>
-            </span>
+            </div>
           </label>
           <label class="contact-info__item">
-            <span class="contact-info__name">Адрес почты</span>
-            <span class="contact-info__input-wrapper contact-info__input-wrapper--mail-icon">
+            <div class="contact-info__name">Адрес почты</div>
+            <div class="contact-info__input-wrapper contact-info__input-wrapper--mail-icon">
               <input class="contact-info__input" type="email" placeholder="Введите почту *" name="mail" required>
-            </span>
+            </div>
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="app">
-        <legend class="app__title">С каким приложением путешествовали?</legend>
-        <div class="app__list">
-          <label class="app__item">
-            <input class="app__input" type="radio" id="pink-ios" name="text" value="Pink для iOS" checked>
-            <span class="app__checkbox"></span>
-            <span class="app__text">Pink для iOS</span>
-          </label>
-          <label class="app__item">
-            <input class="app__input" type="radio" id="pink-android" name="text" value="Pink на Android">
-            <span class="app__checkbox"></span>
-            <span class="app__text">Pink на Android</span>
-          </label>
-          <label class="app__item">
-            <input class="app__input" type="radio" id="Windows" name="text" value="Windows Phone">
-            <span class="app__checkbox"></span>
-            <span class="app__text">Windows Phone</span>
-          </label>
-        </div>
-      </fieldset>
+      <div class="wrapper wrapper__fieldset wrapper__fieldset-app">
+        <fieldset class="form-main__fieldset form-main__fieldset--app app">
+          <legend class="app__title">С каким приложением путешествовали?</legend>
+          <div class="app__list">
+            <label class="app__item">
+              <input class="app__input" type="radio" id="pink-ios" name="text" value="Pink для iOS" checked>
+              <div class="app__checkbox"></div>
+              <div class="app__text">Pink для iOS</div>
+            </label>
+            <label class="app__item">
+              <input class="app__input" type="radio" id="pink-android" name="text" value="Pink на Android">
+              <div class="app__checkbox"></div>
+              <div class="app__text">Pink на Android</div>
+            </label>
+            <label class="app__item">
+              <input class="app__input" type="radio" id="Windows" name="text" value="Windows Phone">
+              <div class="app__checkbox"></div>
+              <div class="app__text">Windows Phone</div>
+            </label>
+          </div>
+        </fieldset>
+      </div>
 
-      <fieldset class="send">
+      <fieldset class="form-main__fieldset form-main__fieldset--send send">
         <legend class="send__title">Опишите свои эмоции</legend>
         <div class="send__item">
           <label for="message"></label>
@@ -263,9 +267,9 @@
             name="message" required></textarea>
         </div>
       </fieldset>
-      <div class="button-wrapper">
-        <button class="button-wrapper__send-button" type="submit">Отправить форму</button>
-        <p class="button-wrapper__form-necessarily">* — обязательные поля</p>
+      <div class="send__button">
+        <button class="send__button-wrapper" type="submit">Отправить форму</button>
+        <p class="send__form-necessarily">* — обязательные поля</p>
       </div>
 
       <div class="popup popup--success">
@@ -297,6 +301,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/sp-logo-pink-blue-desktop.svg">
           <img class="page-footer__logo-image" src="img/logotype-blue-tablet.svg" alt="Приложение Пинк">
+        </picture>
       </a>
       <div class="social">
         <ul class="social__list">

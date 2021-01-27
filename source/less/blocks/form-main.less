@@ -16,10 +16,15 @@
   text-align: center;
 }
 
-fieldset {
+.form-main__fieldset {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.form-main__fieldset--send {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,18 +33,36 @@ fieldset {
     flex-direction: column;
     max-width: 660px;
     margin: 0 auto;
-    padding: 30px 4.7%;
+    padding: 0;
   }
 
   .form-main__title {
     width: 500px;
     font-size: 18px;
     line-height: 30px;
-    margin: 0 auto 10px;
+    margin: 91px auto 10px;
   }
 
   .form-main__title--tablet {
     display: unset;
+  }
+
+  .form-main__fieldset {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form-main__fieldset--app {
+    margin: 9px 0 54px;
+  }
+
+  .form-main__fieldset--contact-info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form-main__fieldset--send {
+    margin-bottom: 66px;
   }
 }
 

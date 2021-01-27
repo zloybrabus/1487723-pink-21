@@ -2,7 +2,7 @@
   box-sizing: border-box;
   min-height: 236px;
   padding: 50px 6% 28px;
-  background: #000000 url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   background-position: 50% 2%;
   background-size: auto;
   text-align: center;
@@ -26,16 +26,19 @@
 
 @media (min-width: @tablet-width) {
   .page-title {
-    padding: 123px 0;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 7%;
-    background-size: cover;
+    padding-top: 91px;
+    padding-bottom: 59px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: 50% 0%;
+    background-size: auto;
     background-color: #1d2631;
   }
 
   @media (min-resolution: 2dppx) {
     .page-title {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: cover;
+      background-position: 50% -1%;
+      background-size: 181%;
     }
   }
 
@@ -43,7 +46,7 @@
     width: 500px;
     font-size: 50px;
     line-height: 68px;
-    margin: 55px auto 0;
+    margin: 86px auto 0;
   }
 }
 

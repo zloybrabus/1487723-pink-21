@@ -82,10 +82,9 @@
 
 @media (min-width: @tablet-width) {
   .achievements {
-    order: 3;
     position: relative;
-    margin: 0 0 40px;
-    padding: 22px 9.3%;
+    padding: 22px 7%;
+    padding-bottom: 7px;
     border: 2px solid #e5e5e5;
     background: #ffffff;
   }
@@ -97,18 +96,27 @@
     padding: 0;
   }
 
+  .achievements__no-br {
+    display: none;
+  }
+
   .achievements__checkbox {
     margin-left: 15px;
+    margin-top: 2px;
+    min-width: 35px;
+    height: 35px;
   }
 
   .achievements__list {
     width: auto;
     margin-left: 0;
+    margin-top: 20px;
   }
 
   .achievements__item {
     margin-left: 0;
     margin-right: 20px;
+    margin-bottom: 41px;
   }
 }
 
