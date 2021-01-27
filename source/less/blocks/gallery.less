@@ -3,8 +3,12 @@
   background: #ffffff;
   font-family: "Open sans", "Arial", sans-serif;
   text-align: center;
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.gallery__br {
+  display: inline;
 }
 
 .gallery__list {
@@ -19,7 +23,10 @@
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
-  padding: 17px 14px;
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+  padding-left: 17px;
   text-align: left;
   background-color: #f2f2f2;
 }
@@ -28,14 +35,14 @@
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
-  padding: 17px 16px;
+  padding: 17px 16px 18px;
   text-align: left;
   background-color: #f2f2f2;
 }
 
 .gallery__item {
   width: 280px;
-  margin: 0 auto 22px;
+  margin: 0 auto 21px;
 }
 
 .gallery__image-day {
@@ -48,12 +55,13 @@
 }
 
 .gallery__info {
-  width: 250px;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-  padding-bottom: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 49px;
 }
 
 .gallery__author-image-day {
@@ -83,7 +91,7 @@
 
 .gallery__author-image-day img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .gallery__author-name {
@@ -97,6 +105,7 @@
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
+  font-weight: normal;
   color: #79818a;
   margin: 0;
 }
@@ -139,9 +148,14 @@
 
 @media (min-width: @tablet-width) {
   .gallery {
-    max-width: 660px;
+    max-width: 100%;
     margin: 0 auto;
+    padding-top: 42px;
     padding-bottom: 38px;
+  }
+
+  .gallery__br {
+    display: none;
   }
 
   .gallery__author-image-day::before {
@@ -150,8 +164,9 @@
   }
 
   .gallery__info {
-    width: 440px;
-    margin: 50px auto 26px;
+    margin: 50px auto 27px;
+    padding-left: 85px;
+    padding-right: 85px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -160,7 +175,7 @@
     position: relative;
     max-width: 620px;
     margin: 0 auto 50px;
-    padding: 20px 30px;
+    padding: 22px 30px 20px;
   }
 
   .gallery__author-info-wrapper {
@@ -186,11 +201,10 @@
     flex-direction: column;
     max-width: none;
     width: 300px;
-    margin: 0 0 23px;
+    margin: 0 0 21px;
   }
 
   .gallery__image-day {
-    display: block;
     width: 100%;
     margin-bottom: 0;
   }
@@ -201,7 +215,7 @@
     width: 100%;
     max-width: none;
     margin: 0 auto;
-    padding: 22px 30px;
+    padding: 23px 30px;
   }
 
   .gallery__author-name {
@@ -238,7 +252,7 @@
 
   .gallery__social-day {
     position: absolute;
-    top: 13px;
+    top: 20px;
     left: auto;
     right: 30px;
     margin-top: auto;
@@ -253,15 +267,16 @@
 
 @media (min-width: @desktop-width) {
   .gallery {
-    max-width: 940px;
+    max-width: 100%;
     margin: 0 auto;
     padding-bottom: 0;
-    padding-top: 40px;
+    padding-top: 49px;
   }
 
   .gallery__info {
     width: 572px;
     margin: 42px auto 37px;
+    padding-bottom: 52px;
   }
 
   .gallery__author-info-wrapper {
