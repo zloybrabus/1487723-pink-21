@@ -19,7 +19,7 @@
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
-  padding: 12px;
+  padding: 17px 14px;
   text-align: left;
   background-color: #f2f2f2;
 }
@@ -28,7 +28,7 @@
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
-  padding: 14px;
+  padding: 17px 16px;
   text-align: left;
   background-color: #f2f2f2;
 }
@@ -70,7 +70,7 @@
 .gallery__author-image-day::before {
   position: absolute;
   top: 0;
-  right: 4%;
+  right: 6%;
   content: "панорама дня";
   width: 140px;
   height: 36px;
@@ -130,7 +130,7 @@
 
 .gallery__social {
   display: flex;
-  padding-top: 11px;
+  padding-top: 5px;
   justify-content: flex-end;
   align-items: center;
   background: #f2f2f2;
@@ -141,17 +141,17 @@
   .gallery {
     max-width: 660px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 38px;
   }
 
-  .gallery__author-image-day::before  {
+  .gallery__author-image-day::before {
     top: 58px;
     right: 3%;
-}
+  }
 
   .gallery__info {
     width: 440px;
-    margin: 79px auto 23px;
+    margin: 50px auto 26px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -160,7 +160,7 @@
     position: relative;
     max-width: 620px;
     margin: 0 auto 50px;
-    padding: 25px;
+    padding: 20px 30px;
   }
 
   .gallery__author-info-wrapper {
@@ -186,7 +186,7 @@
     flex-direction: column;
     max-width: none;
     width: 300px;
-    margin: 0 0 61px;
+    margin: 0 0 23px;
   }
 
   .gallery__image-day {
@@ -201,7 +201,7 @@
     width: 100%;
     max-width: none;
     margin: 0 auto;
-    padding: 19px;
+    padding: 22px 30px;
   }
 
   .gallery__author-name {
@@ -209,6 +209,7 @@
   }
 
   .gallery__text {
+    min-height: 48px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -225,17 +226,24 @@
     margin-left: 0;
   }
 
+  .gallery__like--day {
+    margin-right: 16px;
+  }
+
   .gallery__social {
     margin-top: auto;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .gallery__like-day {
+  .gallery__social-day {
     position: absolute;
-    top: 23px;
+    top: 13px;
     left: auto;
-    right: 70px;
+    right: 30px;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .gallery__author-image img {
@@ -247,37 +255,69 @@
   .gallery {
     max-width: 940px;
     margin: 0 auto;
+    padding-bottom: 0;
+    padding-top: 40px;
   }
 
   .gallery__info {
     width: 572px;
+    margin: 42px auto 37px;
   }
 
   .gallery__author-info-wrapper {
-    max-width: 1170px;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 0 10.3%;
   }
 
   .gallery__author-info-day {
-    width: 100%;
     max-width: 940px;
-    margin: 0 auto 35px;
+    margin: 0;
+    padding: 23px 26px;
+  }
+
+  .gallery__author-info {
+    padding: 25px 28px;
   }
 
   .gallery__text {
     font-size: 14px;
     line-height: 24px;
+    min-height: unset;
+  }
+
+  .gallery__social-day {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: 17px;
+  }
+
+  .gallery__item {
+    margin: 0 0 57px;
   }
 
   .gallery__list {
     max-width: 940px;
-    margin: 0 auto;
-    padding: 0 10.3%;
+    margin: 44px auto 0;
+  }
+
+  .gallery__text--item {
+    min-height: 48px;
   }
 
   .gallery__image-day {
+    width: 100%;
     height: auto;
+    margin: 0;
+
+    img {
+      min-height: 506px;
+    }
+  }
+
+  .gallery__author-image-day::before {
+    top: 55px;
+    right: 0;
   }
 
   .gallery__author-image {

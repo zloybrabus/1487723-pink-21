@@ -55,7 +55,7 @@
   border: 2px solid #d22856;
 }
 
-.app__input:checked~ .app__checkbox::before {
+.app__input:checked ~ .app__checkbox::before {
   content: "";
   position: absolute;
   top: 0;
@@ -99,10 +99,14 @@
 
 @media (min-width: @desktop-width) {
   .app {
-    width: 46%;
+    max-width: 431px;
     position: relative;
-    margin: 0 0 54px;
-    padding: 41px 7.9% 20px;
+    margin: 0;
+    padding: 68px 21px 18px 43px;
+  }
+
+  .app__list {
+    margin-left: 28px;
   }
 
   .app__item {

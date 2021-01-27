@@ -1,7 +1,6 @@
 .page-header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 2;
 }
 
 .page-header__logo svg:hover {
@@ -223,7 +222,8 @@
 }
 
 .page-header__wrap {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 660px;
   height: auto;
   margin: 0 auto;
   padding: 20px 0 17px;
@@ -329,9 +329,6 @@
   .main-menu__link {
     padding: 0;
     text-transform: none;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 18px;
   }
 
   .page-header__logo {

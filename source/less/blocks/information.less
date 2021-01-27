@@ -1,5 +1,5 @@
 .information__title-wrap {
-  padding-top: 40px;
+  padding-top: 25px;
   margin: 0 auto;
   background-color: #ffffff;
   font-size: 24px;
@@ -90,7 +90,7 @@
     .information__item-container::after {
       content: "";
       display: block;
-      height: 318px;;
+      height: 318px;
       background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 40px;
       background-size: contain;
     }
@@ -116,7 +116,7 @@
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 0;
-    background-position-y: -17px;
+    background-position-y: -10px;
   }
 
   .information__list {
@@ -160,9 +160,7 @@
     line-height: 24px;
     margin: 0;
   }
-}
 
-@media (max-width: 1199px) and (min-width: @tablet-width) {
   .information__list::before {
     content: "";
     display: block;
@@ -185,6 +183,26 @@
 }
 
 @media (min-width: @desktop-width) {
+  .information__list::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: -350px;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 300px;
+    height: 520px;
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat center 40px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .information__list::before {
+      background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat center 40px;
+      background-size: 270px;
+    }
+  }
+
   .information__wrapper {
     width: 1200px;
     display: flex;
@@ -214,17 +232,19 @@
   }
 
   .information__item-container {
-    padding: 0 120px 0;
+    padding: 0;
+    background-size: 100%;
+    background-position-y: 0;
   }
 
   .information__title-wrap {
     max-width: 940px;
-    padding: 65px 0 30px;
+    padding: 62px 0 45px;
   }
 
   .information__item {
-    max-width: 250px;
-    margin-top: 0;
+    max-width: 240px;
+    margin-top: -29px;
     margin-left: auto;
     text-align: center;
     font-size: 18px;
@@ -280,8 +300,8 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    padding-bottom: 35px;
-    margin: 0;
+    padding-bottom: 24px;
+    margin: 14px 0 0 0;
   }
 
   .information__description {
