@@ -4,6 +4,7 @@ var pageHeader = document.querySelector('.page-header__wrap');
 
 pageHeader.classList.remove('page-header__wrap--opened');
 mainMenu.classList.remove('main-menu--opened');
+mainMenuToggle.classList.remove('main-menu__toggle--no-js');
 mainMenu.classList.add('main-menu--closed');
 
 mainMenuToggle.addEventListener('click', function () {
